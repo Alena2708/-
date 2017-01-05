@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AF8CEE20021092A9D213AA95ED2D56932AB9E119",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AF8CEE20021092A9D213AA95ED2D56932AB9E119" : 9223372036854775807,
+    "23A493791BEA9358B57C83A42F72E9B505300ED6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2AF2C4EF-C356-4314-93D5-638347F3B3F9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AF8CEE20021092A9D213AA95ED2D56932AB9E119" : "%D0%9A%D0%BE%D0%BF%D0%B8%D1%8F%20CandySearch-2\/",
+    "23A493791BEA9358B57C83A42F72E9B505300ED6" : "CandySearch\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CandySearch",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CandySearch.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alena2708\/CandySearch.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23A493791BEA9358B57C83A42F72E9B505300ED6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alena2708\/CandySearch-2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AF8CEE20021092A9D213AA95ED2D56932AB9E119"
+    }
+  ]
+}

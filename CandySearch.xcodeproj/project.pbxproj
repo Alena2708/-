@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */; };
+		171E0C801B8E5B84001E6242 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */; };
+		171E0C821B8E5B84001E6242 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0C811B8E5B84001E6242 /* DetailViewController.swift */; };
+		171E0C851B8E5B84001E6242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C831B8E5B84001E6242 /* Main.storyboard */; };
+		171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C861B8E5B84001E6242 /* Assets.xcassets */; };
+		171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */; };
+		171E0CAE1B8E5C58001E6242 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* City.swift */; };
+		84261C481E0470380007DDE3 /* BSUAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261C471E0470370007DDE3 /* BSUAnnotation.swift */; };
+		84261C4A1E0482210007DDE3 /* PhotoGalerryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261C491E0482210007DDE3 /* PhotoGalerryView.swift */; };
+		84261C4D1E048CE40007DDE3 /* Абзаково-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C4C1E048CE30007DDE3 /* Абзаково-1.jpg */; };
+		84261C4F1E048CF60007DDE3 /* Абзаково-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C4E1E048CF60007DDE3 /* Абзаково-2.jpg */; };
+		84261C511E048CFE0007DDE3 /* Абзаково-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C501E048CFE0007DDE3 /* Абзаково-3.jpg */; };
+		84261C531E048D0F0007DDE3 /* Абзаково-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C521E048D0F0007DDE3 /* Абзаково-4.jpg */; };
+		84261C551E048D130007DDE3 /* Абзаково-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C541E048D130007DDE3 /* Абзаково-5.jpg */; };
+		84261C571E048D280007DDE3 /* Абзаково-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C561E048D280007DDE3 /* Абзаково-6.jpg */; };
+		84261C591E048D2F0007DDE3 /* Абзаково-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C581E048D2F0007DDE3 /* Абзаково-7.jpg */; };
+		84261C5B1E048D370007DDE3 /* Абзаково-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C5A1E048D370007DDE3 /* Абзаково-8.jpg */; };
+		84261C5D1E048D3B0007DDE3 /* Абзаково-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C5C1E048D3B0007DDE3 /* Абзаково-9.jpg */; };
+		84261C5F1E048D3F0007DDE3 /* Абзаково-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C5E1E048D3F0007DDE3 /* Абзаково-10.jpg */; };
+		84261C611E048E380007DDE3 /* Адлер-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C601E048E380007DDE3 /* Адлер-1.jpg */; };
+		84261C631E048E3E0007DDE3 /* Адлер-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C621E048E3E0007DDE3 /* Адлер-2.jpg */; };
+		84261C651E048E450007DDE3 /* Адлер-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C641E048E450007DDE3 /* Адлер-3.jpg */; };
+		84261CA81E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84261CA61E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld */; };
+		84261CB31E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CA91E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift */; };
+		84261CB41E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CAA1E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift */; };
+		84261CB51E0A9BD90007DDE3 /* Place+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CAB1E0A9BD90007DDE3 /* Place+CoreDataClass.swift */; };
+		84261CB61E0A9BD90007DDE3 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CAC1E0A9BD90007DDE3 /* Place+CoreDataProperties.swift */; };
+		84261CB71E0A9BD90007DDE3 /* Places+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CAD1E0A9BD90007DDE3 /* Places+CoreDataClass.swift */; };
+		84261CB81E0A9BD90007DDE3 /* Places+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CAE1E0A9BD90007DDE3 /* Places+CoreDataProperties.swift */; };
+		84261CB91E0A9BD90007DDE3 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CAF1E0A9BD90007DDE3 /* Category+CoreDataClass.swift */; };
+		84261CBA1E0A9BD90007DDE3 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CB01E0A9BD90007DDE3 /* Category+CoreDataProperties.swift */; };
+		84261CBB1E0A9BD90007DDE3 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CB11E0A9BD90007DDE3 /* Photo+CoreDataClass.swift */; };
+		84261CBC1E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CB21E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift */; };
+		843C3EB01E02736B00B32B6D /* Base.db in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EAF1E02736B00B32B6D /* Base.db */; settings = {ASSET_TAGS = (New, ); }; };
+		843C3EB21E02737800B32B6D /* Base.sql in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EB11E02737800B32B6D /* Base.sql */; };
+		843C3EB41E0273CE00B32B6D /* Абзаково.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EB31E0273CE00B32B6D /* Абзаково.jpg */; };
+		843C3EB61E0273DF00B32B6D /* Адлер.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EB51E0273DF00B32B6D /* Адлер.jpg */; };
+		843C3EB81E0273E500B32B6D /* Адыгея.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EB71E0273E500B32B6D /* Адыгея.jpg */; };
+		843C3EBA1E0273EA00B32B6D /* Анапа.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EB91E0273EA00B32B6D /* Анапа.jpg */; };
+		843C3EBC1E0273EF00B32B6D /* Астрахань.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EBB1E0273EF00B32B6D /* Астрахань.jpg */; };
+		843C3EBE1E0273F400B32B6D /* Волгоград.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EBD1E0273F400B32B6D /* Волгоград.jpg */; };
+		843C3EC01E0273F900B32B6D /* Геленджик.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EBF1E0273F800B32B6D /* Геленджик.jpg */; };
+		843C3EC21E0273FE00B32B6D /* Краснодар.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EC11E0273FE00B32B6D /* Краснодар.jpg */; };
+		843C3EC51E02773A00B32B6D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843C3EC41E02773A00B32B6D /* MapKit.framework */; };
+		843C3EC71E027D6600B32B6D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C3EC61E027D6500B32B6D /* MapViewController.swift */; };
+		8478E2EB1E0AD55200570872 /* DataBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2EA1E0AD55200570872 /* DataBaseController.swift */; };
+		8478E2EE1E0AF34C00570872 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */; };
+		8478E2F01E0AF3DA00570872 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2EF1E0AF3DA00570872 /* Category.swift */; };
+		8478E30C1E1D6ECE00570872 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E30A1E1D6ECD00570872 /* TableViewCell1.swift */; };
+		8478E30D1E1D6ECF00570872 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8478E30B1E1D6ECD00570872 /* TableViewCell1.xib */; };
+		8478E3111E1D90BE00570872 /* Достопримечательности.png in Resources */ = {isa = PBXBuildFile; fileRef = 8478E3101E1D90BB00570872 /* Достопримечательности.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		171E0C7A1B8E5B84001E6242 /* CandySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		171E0C811B8E5B84001E6242 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		171E0C841B8E5B84001E6242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		171E0C861B8E5B84001E6242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		171E0C891B8E5B84001E6242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		171E0C8B1B8E5B84001E6242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171E0CAD1B8E5C58001E6242 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		84261C471E0470370007DDE3 /* BSUAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSUAnnotation.swift; sourceTree = "<group>"; };
+		84261C491E0482210007DDE3 /* PhotoGalerryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalerryView.swift; sourceTree = "<group>"; };
+		84261C4C1E048CE30007DDE3 /* Абзаково-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-1.jpg"; path = "Абзаково/Абзаково-1.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C4E1E048CF60007DDE3 /* Абзаково-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-2.jpg"; path = "Абзаково/Абзаково-2.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C501E048CFE0007DDE3 /* Абзаково-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-3.jpg"; path = "Абзаково/Абзаково-3.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C521E048D0F0007DDE3 /* Абзаково-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-4.jpg"; path = "Абзаково/Абзаково-4.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C541E048D130007DDE3 /* Абзаково-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-5.jpg"; path = "Абзаково/Абзаково-5.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C561E048D280007DDE3 /* Абзаково-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-6.jpg"; path = "Абзаково/Абзаково-6.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C581E048D2F0007DDE3 /* Абзаково-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-7.jpg"; path = "Абзаково/Абзаково-7.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C5A1E048D370007DDE3 /* Абзаково-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-8.jpg"; path = "Абзаково/Абзаково-8.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C5C1E048D3B0007DDE3 /* Абзаково-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-9.jpg"; path = "Абзаково/Абзаково-9.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C5E1E048D3F0007DDE3 /* Абзаково-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-10.jpg"; path = "Абзаково/Абзаково-10.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C601E048E380007DDE3 /* Адлер-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Адлер-1.jpg"; path = "Адлер/Адлер-1.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C621E048E3E0007DDE3 /* Адлер-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Адлер-2.jpg"; path = "Адлер/Адлер-2.jpg"; sourceTree = SOURCE_ROOT; };
+		84261C641E048E450007DDE3 /* Адлер-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Адлер-3.jpg"; path = "Адлер/Адлер-3.jpg"; sourceTree = SOURCE_ROOT; };
+		84261CA71E07D94D0007DDE3 /* DatabaseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DatabaseModel.xcdatamodel; sourceTree = "<group>"; };
+		84261CA91E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84261CAA1E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		84261CAB1E0A9BD90007DDE3 /* Place+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84261CAC1E0A9BD90007DDE3 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		84261CAD1E0A9BD90007DDE3 /* Places+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Places+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84261CAE1E0A9BD90007DDE3 /* Places+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Places+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		84261CAF1E0A9BD90007DDE3 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84261CB01E0A9BD90007DDE3 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		84261CB11E0A9BD90007DDE3 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84261CB21E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		843C3EAF1E02736B00B32B6D /* Base.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Base.db; sourceTree = "<group>"; };
+		843C3EB11E02737800B32B6D /* Base.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Base.sql; sourceTree = "<group>"; };
+		843C3EB31E0273CE00B32B6D /* Абзаково.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково.jpg"; path = "Города Фото/Абзаково.jpg"; sourceTree = SOURCE_ROOT; };
+		843C3EB51E0273DF00B32B6D /* Адлер.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Адлер.jpg"; path = "Города Фото/Адлер.jpg"; sourceTree = SOURCE_ROOT; };
+		843C3EB71E0273E500B32B6D /* Адыгея.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Адыгея.jpg"; path = "Города Фото/Адыгея.jpg"; sourceTree = SOURCE_ROOT; };
+		843C3EB91E0273EA00B32B6D /* Анапа.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Анапа.jpg"; path = "Города Фото/Анапа.jpg"; sourceTree = SOURCE_ROOT; };
+		843C3EBB1E0273EF00B32B6D /* Астрахань.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Астрахань.jpg"; path = "Города Фото/Астрахань.jpg"; sourceTree = SOURCE_ROOT; };
+		843C3EBD1E0273F400B32B6D /* Волгоград.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Волгоград.jpg"; path = "Города Фото/Волгоград.jpg"; sourceTree = SOURCE_ROOT; };
+		843C3EBF1E0273F800B32B6D /* Геленджик.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Геленджик.jpg"; path = "Города Фото/Геленджик.jpg"; sourceTree = SOURCE_ROOT; };
+		843C3EC11E0273FE00B32B6D /* Краснодар.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Краснодар.jpg"; path = "Города Фото/Краснодар.jpg"; sourceTree = SOURCE_ROOT; };
+		843C3EC41E02773A00B32B6D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		843C3EC61E027D6500B32B6D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8478E2EA1E0AD55200570872 /* DataBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseController.swift; sourceTree = "<group>"; };
+		8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		8478E2EF1E0AF3DA00570872 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8478E30A1E1D6ECD00570872 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
+		8478E30B1E1D6ECD00570872 /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
+		8478E3101E1D90BB00570872 /* Достопримечательности.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Достопримечательности.png"; path = "Иконки/Достопримечательности.png"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		171E0C771B8E5B84001E6242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843C3EC51E02773A00B32B6D /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		171E0C711B8E5B84001E6242 = {
+			isa = PBXGroup;
+			children = (
+				843C3EAF1E02736B00B32B6D /* Base.db */,
+				843C3EB11E02737800B32B6D /* Base.sql */,
+				171E0C7C1B8E5B84001E6242 /* CandySearch */,
+				171E0C7B1B8E5B84001E6242 /* Products */,
+				843C3EC31E02773900B32B6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		171E0C7B1B8E5B84001E6242 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				171E0C7A1B8E5B84001E6242 /* CandySearch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		171E0C7C1B8E5B84001E6242 /* CandySearch */ = {
+			isa = PBXGroup;
+			children = (
+				8478E30E1E1D6EE400570872 /* Category */,
+				8498C6651DF9DF2300A55489 /* Image */,
+				84261CBD1E0A9C270007DDE3 /* CoreData */,
+				171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */,
+				84261C471E0470370007DDE3 /* BSUAnnotation.swift */,
+				171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */,
+				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
+				843C3EC61E027D6500B32B6D /* MapViewController.swift */,
+				84261C491E0482210007DDE3 /* PhotoGalerryView.swift */,
+				171E0CAD1B8E5C58001E6242 /* City.swift */,
+				171E0C831B8E5B84001E6242 /* Main.storyboard */,
+				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
+				171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */,
+				171E0C8B1B8E5B84001E6242 /* Info.plist */,
+				84261CA61E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld */,
+				8478E2EA1E0AD55200570872 /* DataBaseController.swift */,
+			);
+			path = CandySearch;
+			sourceTree = "<group>";
+		};
+		84261C4B1E048CBC0007DDE3 /* Img */ = {
+			isa = PBXGroup;
+			children = (
+				84261C601E048E380007DDE3 /* Адлер-1.jpg */,
+				84261C621E048E3E0007DDE3 /* Адлер-2.jpg */,
+				84261C641E048E450007DDE3 /* Адлер-3.jpg */,
+				84261C4C1E048CE30007DDE3 /* Абзаково-1.jpg */,
+				84261C4E1E048CF60007DDE3 /* Абзаково-2.jpg */,
+				84261C501E048CFE0007DDE3 /* Абзаково-3.jpg */,
+				84261C521E048D0F0007DDE3 /* Абзаково-4.jpg */,
+				84261C541E048D130007DDE3 /* Абзаково-5.jpg */,
+				84261C561E048D280007DDE3 /* Абзаково-6.jpg */,
+				84261C581E048D2F0007DDE3 /* Абзаково-7.jpg */,
+				84261C5A1E048D370007DDE3 /* Абзаково-8.jpg */,
+				84261C5C1E048D3B0007DDE3 /* Абзаково-9.jpg */,
+				84261C5E1E048D3F0007DDE3 /* Абзаково-10.jpg */,
+			);
+			name = Img;
+			sourceTree = "<group>";
+		};
+		84261CBD1E0A9C270007DDE3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				84261CBE1E0A9C980007DDE3 /* Models */,
+				84261CAE1E0A9BD90007DDE3 /* Places+CoreDataProperties.swift */,
+				84261CB21E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift */,
+				84261CAC1E0A9BD90007DDE3 /* Place+CoreDataProperties.swift */,
+				84261CB01E0A9BD90007DDE3 /* Category+CoreDataProperties.swift */,
+				84261CAA1E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		84261CBE1E0A9C980007DDE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84261CAD1E0A9BD90007DDE3 /* Places+CoreDataClass.swift */,
+				84261CB11E0A9BD90007DDE3 /* Photo+CoreDataClass.swift */,
+				84261CAB1E0A9BD90007DDE3 /* Place+CoreDataClass.swift */,
+				84261CAF1E0A9BD90007DDE3 /* Category+CoreDataClass.swift */,
+				84261CA91E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		843C3EC31E02773900B32B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				843C3EC41E02773A00B32B6D /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8478E30E1E1D6EE400570872 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */,
+				8478E2EF1E0AF3DA00570872 /* Category.swift */,
+				8478E30A1E1D6ECD00570872 /* TableViewCell1.swift */,
+				8478E30B1E1D6ECD00570872 /* TableViewCell1.xib */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		8478E30F1E1D8F5A00570872 /* CategoryImage */ = {
+			isa = PBXGroup;
+			children = (
+				8478E3101E1D90BB00570872 /* Достопримечательности.png */,
+			);
+			name = CategoryImage;
+			sourceTree = "<group>";
+		};
+		8498C6651DF9DF2300A55489 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				8478E30F1E1D8F5A00570872 /* CategoryImage */,
+				84261C4B1E048CBC0007DDE3 /* Img */,
+				843C3EB31E0273CE00B32B6D /* Абзаково.jpg */,
+				843C3EB51E0273DF00B32B6D /* Адлер.jpg */,
+				843C3EB71E0273E500B32B6D /* Адыгея.jpg */,
+				843C3EC11E0273FE00B32B6D /* Краснодар.jpg */,
+				843C3EBD1E0273F400B32B6D /* Волгоград.jpg */,
+				843C3EBF1E0273F800B32B6D /* Геленджик.jpg */,
+				843C3EBB1E0273EF00B32B6D /* Астрахань.jpg */,
+				843C3EB91E0273EA00B32B6D /* Анапа.jpg */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		171E0C791B8E5B84001E6242 /* CandySearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171E0CA41B8E5B84001E6242 /* Build configuration list for PBXNativeTarget "CandySearch" */;
+			buildPhases = (
+				171E0C761B8E5B84001E6242 /* Sources */,
+				171E0C771B8E5B84001E6242 /* Frameworks */,
+				171E0C781B8E5B84001E6242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CandySearch;
+			productName = CandySearch;
+			productReference = 171E0C7A1B8E5B84001E6242 /* CandySearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		171E0C721B8E5B84001E6242 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Peartree Developers";
+				TargetAttributes = {
+					171E0C791B8E5B84001E6242 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = FTSSWKMXFU;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 171E0C751B8E5B84001E6242 /* Build configuration list for PBXProject "CandySearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 171E0C711B8E5B84001E6242;
+			productRefGroup = 171E0C7B1B8E5B84001E6242 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				171E0C791B8E5B84001E6242 /* CandySearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		171E0C781B8E5B84001E6242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
+				843C3EC01E0273F900B32B6D /* Геленджик.jpg in Resources */,
+				843C3EB41E0273CE00B32B6D /* Абзаково.jpg in Resources */,
+				843C3EBE1E0273F400B32B6D /* Волгоград.jpg in Resources */,
+				84261C5B1E048D370007DDE3 /* Абзаково-8.jpg in Resources */,
+				8478E30D1E1D6ECF00570872 /* TableViewCell1.xib in Resources */,
+				84261C531E048D0F0007DDE3 /* Абзаково-4.jpg in Resources */,
+				84261C591E048D2F0007DDE3 /* Абзаково-7.jpg in Resources */,
+				843C3EB61E0273DF00B32B6D /* Адлер.jpg in Resources */,
+				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,
+				171E0C851B8E5B84001E6242 /* Main.storyboard in Resources */,
+				84261C651E048E450007DDE3 /* Адлер-3.jpg in Resources */,
+				843C3EBA1E0273EA00B32B6D /* Анапа.jpg in Resources */,
+				84261C5F1E048D3F0007DDE3 /* Абзаково-10.jpg in Resources */,
+				8478E3111E1D90BE00570872 /* Достопримечательности.png in Resources */,
+				84261C611E048E380007DDE3 /* Адлер-1.jpg in Resources */,
+				843C3EB01E02736B00B32B6D /* Base.db in Resources */,
+				843C3EBC1E0273EF00B32B6D /* Астрахань.jpg in Resources */,
+				84261C4F1E048CF60007DDE3 /* Абзаково-2.jpg in Resources */,
+				843C3EB21E02737800B32B6D /* Base.sql in Resources */,
+				84261C5D1E048D3B0007DDE3 /* Абзаково-9.jpg in Resources */,
+				84261C551E048D130007DDE3 /* Абзаково-5.jpg in Resources */,
+				84261C4D1E048CE40007DDE3 /* Абзаково-1.jpg in Resources */,
+				84261C631E048E3E0007DDE3 /* Адлер-2.jpg in Resources */,
+				84261C571E048D280007DDE3 /* Абзаково-6.jpg in Resources */,
+				84261C511E048CFE0007DDE3 /* Абзаково-3.jpg in Resources */,
+				843C3EB81E0273E500B32B6D /* Адыгея.jpg in Resources */,
+				843C3EC21E0273FE00B32B6D /* Краснодар.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		171E0C761B8E5B84001E6242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8478E2EE1E0AF34C00570872 /* CategoryViewController.swift in Sources */,
+				84261CB71E0A9BD90007DDE3 /* Places+CoreDataClass.swift in Sources */,
+				84261CB81E0A9BD90007DDE3 /* Places+CoreDataProperties.swift in Sources */,
+				84261CA81E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld in Sources */,
+				84261CB61E0A9BD90007DDE3 /* Place+CoreDataProperties.swift in Sources */,
+				84261CB41E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift in Sources */,
+				171E0C821B8E5B84001E6242 /* DetailViewController.swift in Sources */,
+				84261CBC1E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift in Sources */,
+				84261C4A1E0482210007DDE3 /* PhotoGalerryView.swift in Sources */,
+				84261C481E0470380007DDE3 /* BSUAnnotation.swift in Sources */,
+				171E0CAE1B8E5C58001E6242 /* City.swift in Sources */,
+				84261CB31E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift in Sources */,
+				84261CB51E0A9BD90007DDE3 /* Place+CoreDataClass.swift in Sources */,
+				171E0C801B8E5B84001E6242 /* MasterViewController.swift in Sources */,
+				843C3EC71E027D6600B32B6D /* MapViewController.swift in Sources */,
+				84261CBB1E0A9BD90007DDE3 /* Photo+CoreDataClass.swift in Sources */,
+				84261CB91E0A9BD90007DDE3 /* Category+CoreDataClass.swift in Sources */,
+				8478E2EB1E0AD55200570872 /* DataBaseController.swift in Sources */,
+				171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */,
+				8478E30C1E1D6ECE00570872 /* TableViewCell1.swift in Sources */,
+				84261CBA1E0A9BD90007DDE3 /* Category+CoreDataProperties.swift in Sources */,
+				8478E2F01E0AF3DA00570872 /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		171E0C831B8E5B84001E6242 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171E0C841B8E5B84001E6242 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171E0C891B8E5B84001E6242 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		171E0CA21B8E5B84001E6242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		171E0CA31B8E5B84001E6242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		171E0CA51B8E5B84001E6242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FTSSWKMXFU;
+				INFOPLIST_FILE = CandySearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = travel21;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		171E0CA61B8E5B84001E6242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FTSSWKMXFU;
+				INFOPLIST_FILE = CandySearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = travel21;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		171E0C751B8E5B84001E6242 /* Build configuration list for PBXProject "CandySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171E0CA21B8E5B84001E6242 /* Debug */,
+				171E0CA31B8E5B84001E6242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171E0CA41B8E5B84001E6242 /* Build configuration list for PBXNativeTarget "CandySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171E0CA51B8E5B84001E6242 /* Debug */,
+				171E0CA61B8E5B84001E6242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84261CA61E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84261CA71E07D94D0007DDE3 /* DatabaseModel.xcdatamodel */,
+			);
+			currentVersion = 84261CA71E07D94D0007DDE3 /* DatabaseModel.xcdatamodel */;
+			path = DatabaseModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 171E0C721B8E5B84001E6242 /* Project object */;
+}
