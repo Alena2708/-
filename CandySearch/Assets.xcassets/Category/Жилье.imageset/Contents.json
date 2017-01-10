@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Жилье.png",
+      "filename" : "Коттедж-50.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Коттедж-100.png",
       "scale" : "2x"
     },
     {

@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Здоровье.png",
+      "filename" : "Здоровье-1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Здоровье-100.png",
       "scale" : "2x"
     },
     {

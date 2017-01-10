@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Достопримечательности.png",
+      "filename" : "Бранденбургские ворота Filled-50.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Достопримечательности-100.png",
       "scale" : "2x"
     },
     {

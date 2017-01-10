@@ -55,9 +55,14 @@
 		8478E2EB1E0AD55200570872 /* DataBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2EA1E0AD55200570872 /* DataBaseController.swift */; };
 		8478E2EE1E0AF34C00570872 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */; };
 		8478E2F01E0AF3DA00570872 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2EF1E0AF3DA00570872 /* Category.swift */; };
-		8478E30C1E1D6ECE00570872 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E30A1E1D6ECD00570872 /* TableViewCell1.swift */; };
-		8478E30D1E1D6ECF00570872 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8478E30B1E1D6ECD00570872 /* TableViewCell1.xib */; };
-		8478E3111E1D90BE00570872 /* Достопримечательности.png in Resources */ = {isa = PBXBuildFile; fileRef = 8478E3101E1D90BB00570872 /* Достопримечательности.png */; };
+		84A507F31E1FC9C100F28FE0 /* Самара.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A507F21E1FC9C000F28FE0 /* Самара.jpg */; };
+		84A507F51E1FC9CD00F28FE0 /* Пермь.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A507F41E1FC9CD00F28FE0 /* Пермь.jpg */; };
+		84A507F71E1FC9D400F28FE0 /* Пенза.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A507F61E1FC9D400F28FE0 /* Пенза.jpg */; };
+		84A507F91E1FC9D800F28FE0 /* Киров.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A507F81E1FC9D800F28FE0 /* Киров.jpg */; };
+		84A507FB1E1FC9DB00F28FE0 /* Казань.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A507FA1E1FC9DB00F28FE0 /* Казань.jpg */; };
+		84C12FFE1E1FD86400133053 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C12FFC1E1FD86400133053 /* TableViewCell1.swift */; };
+		84C12FFF1E1FD86400133053 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C12FFD1E1FD86400133053 /* TableViewCell1.xib */; };
+		84C130021E201E3B00133053 /* PlacesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C130011E201E3B00133053 /* PlacesTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,9 +116,14 @@
 		8478E2EA1E0AD55200570872 /* DataBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseController.swift; sourceTree = "<group>"; };
 		8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		8478E2EF1E0AF3DA00570872 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		8478E30A1E1D6ECD00570872 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
-		8478E30B1E1D6ECD00570872 /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
-		8478E3101E1D90BB00570872 /* Достопримечательности.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Достопримечательности.png"; path = "Иконки/Достопримечательности.png"; sourceTree = SOURCE_ROOT; };
+		84A507F21E1FC9C000F28FE0 /* Самара.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Самара.jpg"; path = "Города Фото/Самара.jpg"; sourceTree = SOURCE_ROOT; };
+		84A507F41E1FC9CD00F28FE0 /* Пермь.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Пермь.jpg"; path = "Города Фото/Пермь.jpg"; sourceTree = SOURCE_ROOT; };
+		84A507F61E1FC9D400F28FE0 /* Пенза.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Пенза.jpg"; path = "Города Фото/Пенза.jpg"; sourceTree = SOURCE_ROOT; };
+		84A507F81E1FC9D800F28FE0 /* Киров.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Киров.jpg"; path = "Города Фото/Киров.jpg"; sourceTree = SOURCE_ROOT; };
+		84A507FA1E1FC9DB00F28FE0 /* Казань.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Казань.jpg"; path = "Города Фото/Казань.jpg"; sourceTree = SOURCE_ROOT; };
+		84C12FFC1E1FD86400133053 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
+		84C12FFD1E1FD86400133053 /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
+		84C130011E201E3B00133053 /* PlacesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +160,7 @@
 		171E0C7C1B8E5B84001E6242 /* CandySearch */ = {
 			isa = PBXGroup;
 			children = (
+				84C130001E201AE400133053 /* Места */,
 				8478E30E1E1D6EE400570872 /* Category */,
 				8498C6651DF9DF2300A55489 /* Image */,
 				84261CBD1E0A9C270007DDE3 /* CoreData */,
@@ -227,9 +238,9 @@
 			isa = PBXGroup;
 			children = (
 				8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */,
+				84C12FFC1E1FD86400133053 /* TableViewCell1.swift */,
+				84C12FFD1E1FD86400133053 /* TableViewCell1.xib */,
 				8478E2EF1E0AF3DA00570872 /* Category.swift */,
-				8478E30A1E1D6ECD00570872 /* TableViewCell1.swift */,
-				8478E30B1E1D6ECD00570872 /* TableViewCell1.xib */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -237,7 +248,6 @@
 		8478E30F1E1D8F5A00570872 /* CategoryImage */ = {
 			isa = PBXGroup;
 			children = (
-				8478E3101E1D90BB00570872 /* Достопримечательности.png */,
 			);
 			name = CategoryImage;
 			sourceTree = "<group>";
@@ -250,13 +260,26 @@
 				843C3EB31E0273CE00B32B6D /* Абзаково.jpg */,
 				843C3EB51E0273DF00B32B6D /* Адлер.jpg */,
 				843C3EB71E0273E500B32B6D /* Адыгея.jpg */,
+				843C3EBB1E0273EF00B32B6D /* Астрахань.jpg */,
+				84A507F21E1FC9C000F28FE0 /* Самара.jpg */,
+				843C3EB91E0273EA00B32B6D /* Анапа.jpg */,
+				84A507FA1E1FC9DB00F28FE0 /* Казань.jpg */,
 				843C3EC11E0273FE00B32B6D /* Краснодар.jpg */,
 				843C3EBD1E0273F400B32B6D /* Волгоград.jpg */,
+				84A507F81E1FC9D800F28FE0 /* Киров.jpg */,
 				843C3EBF1E0273F800B32B6D /* Геленджик.jpg */,
-				843C3EBB1E0273EF00B32B6D /* Астрахань.jpg */,
-				843C3EB91E0273EA00B32B6D /* Анапа.jpg */,
+				84A507F41E1FC9CD00F28FE0 /* Пермь.jpg */,
+				84A507F61E1FC9D400F28FE0 /* Пенза.jpg */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		84C130001E201AE400133053 /* Места */ = {
+			isa = PBXGroup;
+			children = (
+				84C130011E201E3B00133053 /* PlacesTableView.swift */,
+			);
+			name = "Места";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,29 +344,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A507F51E1FC9CD00F28FE0 /* Пермь.jpg in Resources */,
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
 				843C3EC01E0273F900B32B6D /* Геленджик.jpg in Resources */,
 				843C3EB41E0273CE00B32B6D /* Абзаково.jpg in Resources */,
 				843C3EBE1E0273F400B32B6D /* Волгоград.jpg in Resources */,
 				84261C5B1E048D370007DDE3 /* Абзаково-8.jpg in Resources */,
-				8478E30D1E1D6ECF00570872 /* TableViewCell1.xib in Resources */,
 				84261C531E048D0F0007DDE3 /* Абзаково-4.jpg in Resources */,
 				84261C591E048D2F0007DDE3 /* Абзаково-7.jpg in Resources */,
+				84C12FFF1E1FD86400133053 /* TableViewCell1.xib in Resources */,
+				84A507F71E1FC9D400F28FE0 /* Пенза.jpg in Resources */,
 				843C3EB61E0273DF00B32B6D /* Адлер.jpg in Resources */,
 				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,
 				171E0C851B8E5B84001E6242 /* Main.storyboard in Resources */,
 				84261C651E048E450007DDE3 /* Адлер-3.jpg in Resources */,
 				843C3EBA1E0273EA00B32B6D /* Анапа.jpg in Resources */,
 				84261C5F1E048D3F0007DDE3 /* Абзаково-10.jpg in Resources */,
-				8478E3111E1D90BE00570872 /* Достопримечательности.png in Resources */,
+				84A507FB1E1FC9DB00F28FE0 /* Казань.jpg in Resources */,
 				84261C611E048E380007DDE3 /* Адлер-1.jpg in Resources */,
 				843C3EB01E02736B00B32B6D /* Base.db in Resources */,
+				84A507F31E1FC9C100F28FE0 /* Самара.jpg in Resources */,
 				843C3EBC1E0273EF00B32B6D /* Астрахань.jpg in Resources */,
 				84261C4F1E048CF60007DDE3 /* Абзаково-2.jpg in Resources */,
 				843C3EB21E02737800B32B6D /* Base.sql in Resources */,
 				84261C5D1E048D3B0007DDE3 /* Абзаково-9.jpg in Resources */,
 				84261C551E048D130007DDE3 /* Абзаково-5.jpg in Resources */,
 				84261C4D1E048CE40007DDE3 /* Абзаково-1.jpg in Resources */,
+				84A507F91E1FC9D800F28FE0 /* Киров.jpg in Resources */,
 				84261C631E048E3E0007DDE3 /* Адлер-2.jpg in Resources */,
 				84261C571E048D280007DDE3 /* Абзаково-6.jpg in Resources */,
 				84261C511E048CFE0007DDE3 /* Абзаково-3.jpg in Resources */,
@@ -363,6 +390,7 @@
 				84261CB71E0A9BD90007DDE3 /* Places+CoreDataClass.swift in Sources */,
 				84261CB81E0A9BD90007DDE3 /* Places+CoreDataProperties.swift in Sources */,
 				84261CA81E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld in Sources */,
+				84C130021E201E3B00133053 /* PlacesTableView.swift in Sources */,
 				84261CB61E0A9BD90007DDE3 /* Place+CoreDataProperties.swift in Sources */,
 				84261CB41E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift in Sources */,
 				171E0C821B8E5B84001E6242 /* DetailViewController.swift in Sources */,
@@ -378,7 +406,7 @@
 				84261CB91E0A9BD90007DDE3 /* Category+CoreDataClass.swift in Sources */,
 				8478E2EB1E0AD55200570872 /* DataBaseController.swift in Sources */,
 				171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */,
-				8478E30C1E1D6ECE00570872 /* TableViewCell1.swift in Sources */,
+				84C12FFE1E1FD86400133053 /* TableViewCell1.swift in Sources */,
 				84261CBA1E0A9BD90007DDE3 /* Category+CoreDataProperties.swift in Sources */,
 				8478E2F01E0AF3DA00570872 /* Category.swift in Sources */,
 			);

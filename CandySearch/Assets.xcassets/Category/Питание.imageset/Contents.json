@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Рестораны.png",
+      "filename" : "Ресторан-50.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Ресторан-101.png",
       "scale" : "2x"
     },
     {
