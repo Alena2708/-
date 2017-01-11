@@ -16,9 +16,9 @@ struct CategoryPlaces {
 
 
 class CategoryViewController: UITableViewController  {
-
+var detailViewController: PlacesTableView? = nil
     var categoryes = [CategoryPlaces]()
-
+var detailCity: City!
     
     override func viewDidLoad() {
         
@@ -47,6 +47,29 @@ class CategoryViewController: UITableViewController  {
  
         return cell
     }
- override   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {return 50    }
+ override   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 50
+    }
+ 
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPlaces"{
+            if let indexPath = tableView.indexPathForSelectedRow {
+            let category : CategoryPlaces
+              category = categoryes[(indexPath as NSIndexPath).row]
+             let destinationViewController = segue.destination as!  PlacesTableView
+            destinationViewController.detailCategory = category
+              destinationViewController.detailCity = detailCity
+            }}
+    }
+
+    
 }
+
+
+
+
+
   

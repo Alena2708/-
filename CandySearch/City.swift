@@ -3,6 +3,7 @@
 import Foundation
 
 struct City {
+    let id:Int!
   let category : String
   let name : String
     let text :String

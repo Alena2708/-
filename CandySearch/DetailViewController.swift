@@ -121,8 +121,15 @@ class DetailViewController: UIViewController {
         navigationController?.hidesBarsOnSwipe = true
         prefersStatusBarHidden
     }
-    
-       /* fileprivate func setImage(){
+     func prepare2(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCategory"{
+            let destinationViewController = segue.destination as!  CategoryViewController
+            destinationViewController.detailCity = detailCity
+            
+        }
+    }
+
+    /* fileprivate func setImage(){
         self.candyImageView.image = UIImage(named: self.imageList[self.imageIndex])
   //  }
 

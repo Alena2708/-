@@ -63,6 +63,8 @@
 		84C12FFE1E1FD86400133053 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C12FFC1E1FD86400133053 /* TableViewCell1.swift */; };
 		84C12FFF1E1FD86400133053 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C12FFD1E1FD86400133053 /* TableViewCell1.xib */; };
 		84C130021E201E3B00133053 /* PlacesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C130011E201E3B00133053 /* PlacesTableView.swift */; };
+		84F013091E260EBB002E319D /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013071E260EBB002E319D /* TableViewCell2.swift */; };
+		84F0130A1E260EBB002E319D /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F013081E260EBB002E319D /* TableViewCell2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +126,8 @@
 		84C12FFC1E1FD86400133053 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
 		84C12FFD1E1FD86400133053 /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
 		84C130011E201E3B00133053 /* PlacesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableView.swift; sourceTree = "<group>"; };
+		84F013071E260EBB002E319D /* TableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
+		84F013081E260EBB002E319D /* TableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +282,8 @@
 			isa = PBXGroup;
 			children = (
 				84C130011E201E3B00133053 /* PlacesTableView.swift */,
+				84F013071E260EBB002E319D /* TableViewCell2.swift */,
+				84F013081E260EBB002E319D /* TableViewCell2.xib */,
 			);
 			name = "Места";
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 				84261C571E048D280007DDE3 /* Абзаково-6.jpg in Resources */,
 				84261C511E048CFE0007DDE3 /* Абзаково-3.jpg in Resources */,
 				843C3EB81E0273E500B32B6D /* Адыгея.jpg in Resources */,
+				84F0130A1E260EBB002E319D /* TableViewCell2.xib in Resources */,
 				843C3EC21E0273FE00B32B6D /* Краснодар.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +405,7 @@
 				84261C4A1E0482210007DDE3 /* PhotoGalerryView.swift in Sources */,
 				84261C481E0470380007DDE3 /* BSUAnnotation.swift in Sources */,
 				171E0CAE1B8E5C58001E6242 /* City.swift in Sources */,
+				84F013091E260EBB002E319D /* TableViewCell2.swift in Sources */,
 				84261CB31E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift in Sources */,
 				84261CB51E0A9BD90007DDE3 /* Place+CoreDataClass.swift in Sources */,
 				171E0C801B8E5B84001E6242 /* MasterViewController.swift in Sources */,
