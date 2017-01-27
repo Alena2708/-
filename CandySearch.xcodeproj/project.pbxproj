@@ -52,6 +52,9 @@
 		843C3EC21E0273FE00B32B6D /* Краснодар.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EC11E0273FE00B32B6D /* Краснодар.jpg */; };
 		843C3EC51E02773A00B32B6D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843C3EC41E02773A00B32B6D /* MapKit.framework */; };
 		843C3EC71E027D6600B32B6D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C3EC61E027D6500B32B6D /* MapViewController.swift */; };
+		846EC0361E376B990008EA59 /* CollectionViewCellPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EC0351E376B990008EA59 /* CollectionViewCellPhotos.swift */; };
+		846EC0381E376BEB0008EA59 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EC0371E376BEA0008EA59 /* NewViewController.swift */; };
+		846EC03A1E3B302C0008EA59 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846EC0391E3B302B0008EA59 /* CoreLocation.framework */; };
 		8478E2EB1E0AD55200570872 /* DataBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2EA1E0AD55200570872 /* DataBaseController.swift */; };
 		8478E2EE1E0AF34C00570872 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */; };
 		8478E2F01E0AF3DA00570872 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478E2EF1E0AF3DA00570872 /* Category.swift */; };
@@ -115,6 +118,9 @@
 		843C3EC11E0273FE00B32B6D /* Краснодар.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Краснодар.jpg"; path = "Города Фото/Краснодар.jpg"; sourceTree = SOURCE_ROOT; };
 		843C3EC41E02773A00B32B6D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		843C3EC61E027D6500B32B6D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		846EC0351E376B990008EA59 /* CollectionViewCellPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellPhotos.swift; sourceTree = "<group>"; };
+		846EC0371E376BEA0008EA59 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		846EC0391E3B302B0008EA59 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8478E2EA1E0AD55200570872 /* DataBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseController.swift; sourceTree = "<group>"; };
 		8478E2ED1E0AF34C00570872 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		8478E2EF1E0AF3DA00570872 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846EC03A1E3B302C0008EA59 /* CoreLocation.framework in Frameworks */,
 				843C3EC51E02773A00B32B6D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +171,7 @@
 		171E0C7C1B8E5B84001E6242 /* CandySearch */ = {
 			isa = PBXGroup;
 			children = (
+				846EC0341E3768340008EA59 /* Photo */,
 				84C130001E201AE400133053 /* Места */,
 				8478E30E1E1D6EE400570872 /* Category */,
 				8498C6651DF9DF2300A55489 /* Image */,
@@ -173,7 +181,6 @@
 				171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */,
 				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
 				843C3EC61E027D6500B32B6D /* MapViewController.swift */,
-				84261C491E0482210007DDE3 /* PhotoGalerryView.swift */,
 				171E0CAD1B8E5C58001E6242 /* City.swift */,
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
 				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
@@ -233,9 +240,20 @@
 		843C3EC31E02773900B32B6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				846EC0391E3B302B0008EA59 /* CoreLocation.framework */,
 				843C3EC41E02773A00B32B6D /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		846EC0341E3768340008EA59 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				84261C491E0482210007DDE3 /* PhotoGalerryView.swift */,
+				846EC0351E376B990008EA59 /* CollectionViewCellPhotos.swift */,
+				846EC0371E376BEA0008EA59 /* NewViewController.swift */,
+			);
+			name = Photo;
 			sourceTree = "<group>";
 		};
 		8478E30E1E1D6EE400570872 /* Category */ = {
@@ -393,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846EC0361E376B990008EA59 /* CollectionViewCellPhotos.swift in Sources */,
 				8478E2EE1E0AF34C00570872 /* CategoryViewController.swift in Sources */,
 				84261CB71E0A9BD90007DDE3 /* Places+CoreDataClass.swift in Sources */,
 				84261CB81E0A9BD90007DDE3 /* Places+CoreDataProperties.swift in Sources */,
@@ -401,6 +420,7 @@
 				84261CB61E0A9BD90007DDE3 /* Place+CoreDataProperties.swift in Sources */,
 				84261CB41E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift in Sources */,
 				171E0C821B8E5B84001E6242 /* DetailViewController.swift in Sources */,
+				846EC0381E376BEB0008EA59 /* NewViewController.swift in Sources */,
 				84261CBC1E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift in Sources */,
 				84261C4A1E0482210007DDE3 /* PhotoGalerryView.swift in Sources */,
 				84261C481E0470380007DDE3 /* BSUAnnotation.swift in Sources */,

@@ -76,36 +76,11 @@ class DetailViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
- //  updateCounter = 0
- //   timer = Timer.init(timeInterval: 1.0, target: self, selector: #selector (DetailViewController.updateTimer), userInfo: nil, repeats: true)
-    
-/*  self.imageList = ["Абзакво-1", "Абзакво-2","Абзакво-3"]
-    // initialise content mode list
-    self.contentModeList = [
-        "ScaleToFill",
-        "ScaleAspectFit",
-        "ScaleAspectFill"
-        
-    ]
-*/
-    
+ 
     configureView()
   }
- /*internal func updateTimer()
-    {
-        if(updateCounter <= 2)
-        {
-        pageContol.currentPage = updateCounter
-            candyImageView.image = UIImage(named: String (updateCounter+1)+".png")
-            updateCounter = updateCounter+1
-        }
-        else{
-            updateCounter = 0
-        }
-    }
-*/
-  override func didReceiveMemoryWarning() {
+ 
+    override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -113,6 +88,13 @@ class DetailViewController: UIViewController {
         let destinationViewController = segue.destination as!  MapViewController
         destinationViewController.detailCity = detailCity
         
+        }
+    }
+     func prepare3(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPhotos"{
+            let destinationViewController = segue.destination as!  PhotoGaleryView
+            destinationViewController.detailCity = detailCity
+            
         }
     }
     override func viewWillAppear(_ animated: Bool) {
