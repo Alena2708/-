@@ -4,20 +4,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
   
-    // content mode list
-  //  var contentModeList: [String]!
-    
-    // current content mode index
-  //  var contentModeIndex : Int!
-    
-    
-    // image list
-  //  var imageList: [String]!
-    
-    // current image index
- //   var imageIndex: Int!
-    
- // @IBOutlet weak var detailDescriptionLabel: UILabel!
+
     @IBOutlet var detailDescriptionLabel: UILabel!
 
     @IBOutlet weak var candyImageView: UIImageView!
@@ -25,38 +12,8 @@ class DetailViewController: UIViewController {
     @IBOutlet var CityText: UITextView!
     
     @IBOutlet var OnlineMap: UIButton!
-    //@IBOutlet var contentModeLabel: UILabel!
- //   @IBOutlet var pageContol: UIPageControl!
-    
-   // var timer : Timer!
-  //  var updateCounter : Int!
-    
- /*
-    @IBOutlet var previousButtoon: UIBarButtonItem!
-    @IBAction func previousButtonAction(_ sender: UIBarButtonItem) {
-        
-        // set prev content mode in the list
-        if self.contentModeIndex >= 0 {
-            self.contentModeIndex = self.contentModeIndex - 1
-        }
-        
-        // set image content mode
-        self.setImageContentMode()
-    }
-    
-    @IBOutlet var nextButton: UIBarButtonItem!
-    @IBAction func nextButtonAction(_ sender: UIBarButtonItem) {
-        
-        // set next content mode in the list
-        if self.contentModeIndex < self.contentModeList.count {
-            self.contentModeIndex = self.contentModeIndex + 1
-        }
-        
-        // set image content mode
-        self.setImageContentMode()
-    }
-*/
-    
+   
+ 
     var detailCity: City? {
     didSet {
       configureView()
@@ -69,7 +26,6 @@ class DetailViewController: UIViewController {
         candyImageView.image = UIImage(named: detailCity.name+".jpg")
         title = detailCity.name
         CityText.text=detailCity.text
-
         }
     }
   }
@@ -78,6 +34,7 @@ class DetailViewController: UIViewController {
     super.viewDidLoad()
  
     configureView()
+    
   }
  
     override func didReceiveMemoryWarning() {
@@ -87,66 +44,29 @@ class DetailViewController: UIViewController {
     if segue.identifier == "showMap"{
         let destinationViewController = segue.destination as!  MapViewController
         destinationViewController.detailCity = detailCity
-        
         }
-    }
-     func prepare3(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showPhotos"{
+        if segue.identifier == "showPhoto"{
             let destinationViewController = segue.destination as!  PhotoGaleryView
             destinationViewController.detailCity = detailCity
             
         }
+        if segue.identifier == "showCategory"{
+            let destinationViewController = segue.destination as!  CategoryViewController
+            destinationViewController.detailCity = detailCity
+            
+        }
+
     }
+   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.hidesBarsOnSwipe = true
         prefersStatusBarHidden
     }
-     func prepare2(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showCategory"{
-            let destinationViewController = segue.destination as!  CategoryViewController
-            destinationViewController.detailCity = detailCity
-            
-        }
-    }
 
-    /* fileprivate func setImage(){
-        self.candyImageView.image = UIImage(named: self.imageList[self.imageIndex])
-  //  }
-
-    // set imageView content mode
-    fileprivate func setImageContentMode(){
-        
-        // set content mode
-            self.candyImageView.contentMode = UIViewContentMode.init(rawValue: self.contentModeIndex)!
-        //2 stroci
-     //   self.imageIndex = self.contentModeIndex
-     //  self.setImage()
-    
-        // set label for current content mode
-        self.contentModeLabel.text = self.contentModeList[self.contentModeIndex]
-        
-        // enable/disable prev next button
-        self.setButton()
-    }
-    
-    // enable/disable prev next button
-    fileprivate func setButton(){
-        
-        if self.contentModeIndex == 0 {
-            self.previousButtoon.isEnabled = false
-            self.nextButton.isEnabled = true
-        }else if ( self.contentModeIndex == self.contentModeList.count - 1 ) {
-            self.previousButtoon.isEnabled = true
-            self.nextButton.isEnabled = false
-        }else{
-            self.previousButtoon.isEnabled = true
-            self.nextButton.isEnabled = true
-        }*/
-        
-    }
+}
 
     
-//}
+
 

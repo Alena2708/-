@@ -10,10 +10,12 @@ import UIKit
 
 class NewViewController: UIViewController {
     @IBOutlet private weak var imageViewPreview: UIImageView!
-    @IBOutlet var currentPhoto: UIImage!
+    
+     var currentPhoto: UIImage!
     //@IBOutlet var imageOne: UIImageView!
+    var textName:String!
 
-    @IBOutlet var imageAdress: UITextView!
+    @IBOutlet var currenText: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,7 @@ class NewViewController: UIViewController {
     {
         super.viewWillAppear(animated)
         self.imageViewPreview.image = currentPhoto
+        self.currenText.text = textName
         
     }
 

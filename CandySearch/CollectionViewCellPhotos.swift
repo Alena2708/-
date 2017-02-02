@@ -12,6 +12,10 @@ class CollectionViewCellPhotos: UICollectionViewCell {
     
     @IBOutlet var photo: UIImageView!
     
-    
+    @IBOutlet var nameLabel: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
     
 }
