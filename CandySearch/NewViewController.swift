@@ -9,27 +9,46 @@
 import UIKit
 
 class NewViewController: UIViewController {
-    @IBOutlet private weak var imageViewPreview: UIImageView!
+    @IBOutlet  var imageViewPreview: UIImageView!
     
-     var currentPhoto: UIImage!
-    //@IBOutlet var imageOne: UIImageView!
-    var textName:String!
-
+   // var detailPhoto: PhotoImage!
     @IBOutlet var currenText: UILabel!
+    
+    @IBOutlet var detailDescriptionLabel: UILabel!
+    
+    var detailPhoto: PhotoImage? {
+        didSet {
+            configureView()
+        }
+    }
+    func configureView() {
+        if let detailPhoto = detailPhoto {
+            if  (detailDescriptionLabel) != nil{
+                let data = NSData(contentsOf: URL(string:(detailPhoto.image)!)!)
+                imageViewPreview.image = UIImage(data: data as! Data)
+                currenText.text = detailPhoto.name
+               // candyImageView.image = UIImage(named: detailCity.name+".jpg")
+              //  title = detailCity.name
+               // CityText.text=detailCity.text
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         // Do any additional setup after loading the view.
     }
-     func viewWollAppear(animated : Bool)
+   /*  func viewWollAppear(animated : Bool)
     {
         super.viewWillAppear(animated)
         self.imageViewPreview.image = currentPhoto
         self.currenText.text = textName
         
     }
-
+*/
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

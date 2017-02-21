@@ -15,19 +15,6 @@
 		171E0CAE1B8E5C58001E6242 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* City.swift */; };
 		84261C481E0470380007DDE3 /* BSUAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261C471E0470370007DDE3 /* BSUAnnotation.swift */; };
 		84261C4A1E0482210007DDE3 /* PhotoGalerryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261C491E0482210007DDE3 /* PhotoGalerryView.swift */; };
-		84261C4D1E048CE40007DDE3 /* Абзаково-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C4C1E048CE30007DDE3 /* Абзаково-1.jpg */; };
-		84261C4F1E048CF60007DDE3 /* Абзаково-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C4E1E048CF60007DDE3 /* Абзаково-2.jpg */; };
-		84261C511E048CFE0007DDE3 /* Абзаково-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C501E048CFE0007DDE3 /* Абзаково-3.jpg */; };
-		84261C531E048D0F0007DDE3 /* Абзаково-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C521E048D0F0007DDE3 /* Абзаково-4.jpg */; };
-		84261C551E048D130007DDE3 /* Абзаково-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C541E048D130007DDE3 /* Абзаково-5.jpg */; };
-		84261C571E048D280007DDE3 /* Абзаково-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C561E048D280007DDE3 /* Абзаково-6.jpg */; };
-		84261C591E048D2F0007DDE3 /* Абзаково-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C581E048D2F0007DDE3 /* Абзаково-7.jpg */; };
-		84261C5B1E048D370007DDE3 /* Абзаково-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C5A1E048D370007DDE3 /* Абзаково-8.jpg */; };
-		84261C5D1E048D3B0007DDE3 /* Абзаково-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C5C1E048D3B0007DDE3 /* Абзаково-9.jpg */; };
-		84261C5F1E048D3F0007DDE3 /* Абзаково-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C5E1E048D3F0007DDE3 /* Абзаково-10.jpg */; };
-		84261C611E048E380007DDE3 /* Адлер-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C601E048E380007DDE3 /* Адлер-1.jpg */; };
-		84261C631E048E3E0007DDE3 /* Адлер-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C621E048E3E0007DDE3 /* Адлер-2.jpg */; };
-		84261C651E048E450007DDE3 /* Адлер-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84261C641E048E450007DDE3 /* Адлер-3.jpg */; };
 		84261CA81E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84261CA61E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld */; };
 		84261CB31E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CA91E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift */; };
 		84261CB41E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CAA1E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift */; };
@@ -71,6 +58,14 @@
 		84C130021E201E3B00133053 /* PlacesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C130011E201E3B00133053 /* PlacesTableView.swift */; };
 		84F013091E260EBB002E319D /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F013071E260EBB002E319D /* TableViewCell2.swift */; };
 		84F0130A1E260EBB002E319D /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F013081E260EBB002E319D /* TableViewCell2.xib */; };
+		84FC1C661E54E8CA00A56D1F /* Березники.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C651E54E8CA00A56D1F /* Березники.jpg */; };
+		84FC1C681E54E8D400A56D1F /* Боровск.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C671E54E8D400A56D1F /* Боровск.jpg */; };
+		84FC1C6A1E54E8DD00A56D1F /* Брянск.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C691E54E8DD00A56D1F /* Брянск.jpg */; };
+		84FC1C6C1E54E8E400A56D1F /* Валдай.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C6B1E54E8E400A56D1F /* Валдай.jpg */; };
+		84FC1C6E1E54E8EC00A56D1F /* Великий Новгород.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C6D1E54E8EC00A56D1F /* Великий Новгород.jpg */; };
+		84FC1C701E54E8F200A56D1F /* Владимир.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C6F1E54E8F200A56D1F /* Владимир.jpg */; };
+		84FC1C721E54E90300A56D1F /* Вологда.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C711E54E90300A56D1F /* Вологда.jpg */; };
+		84FC1C741E54E90E00A56D1F /* Воронеж.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C731E54E90E00A56D1F /* Воронеж.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -97,19 +92,6 @@
 		171E0CAD1B8E5C58001E6242 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		84261C471E0470370007DDE3 /* BSUAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSUAnnotation.swift; sourceTree = "<group>"; };
 		84261C491E0482210007DDE3 /* PhotoGalerryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalerryView.swift; sourceTree = "<group>"; };
-		84261C4C1E048CE30007DDE3 /* Абзаково-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-1.jpg"; path = "Абзаково/Абзаково-1.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C4E1E048CF60007DDE3 /* Абзаково-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-2.jpg"; path = "Абзаково/Абзаково-2.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C501E048CFE0007DDE3 /* Абзаково-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-3.jpg"; path = "Абзаково/Абзаково-3.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C521E048D0F0007DDE3 /* Абзаково-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-4.jpg"; path = "Абзаково/Абзаково-4.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C541E048D130007DDE3 /* Абзаково-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-5.jpg"; path = "Абзаково/Абзаково-5.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C561E048D280007DDE3 /* Абзаково-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-6.jpg"; path = "Абзаково/Абзаково-6.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C581E048D2F0007DDE3 /* Абзаково-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-7.jpg"; path = "Абзаково/Абзаково-7.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C5A1E048D370007DDE3 /* Абзаково-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-8.jpg"; path = "Абзаково/Абзаково-8.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C5C1E048D3B0007DDE3 /* Абзаково-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-9.jpg"; path = "Абзаково/Абзаково-9.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C5E1E048D3F0007DDE3 /* Абзаково-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Абзаково-10.jpg"; path = "Абзаково/Абзаково-10.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C601E048E380007DDE3 /* Адлер-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Адлер-1.jpg"; path = "Адлер/Адлер-1.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C621E048E3E0007DDE3 /* Адлер-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Адлер-2.jpg"; path = "Адлер/Адлер-2.jpg"; sourceTree = SOURCE_ROOT; };
-		84261C641E048E450007DDE3 /* Адлер-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Адлер-3.jpg"; path = "Адлер/Адлер-3.jpg"; sourceTree = SOURCE_ROOT; };
 		84261CA71E07D94D0007DDE3 /* DatabaseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DatabaseModel.xcdatamodel; sourceTree = "<group>"; };
 		84261CA91E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
 		84261CAA1E0A9BD90007DDE3 /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -153,6 +135,14 @@
 		84C130011E201E3B00133053 /* PlacesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableView.swift; sourceTree = "<group>"; };
 		84F013071E260EBB002E319D /* TableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
 		84F013081E260EBB002E319D /* TableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
+		84FC1C651E54E8CA00A56D1F /* Березники.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Березники.jpg"; sourceTree = "<group>"; };
+		84FC1C671E54E8D400A56D1F /* Боровск.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Боровск.jpg"; sourceTree = "<group>"; };
+		84FC1C691E54E8DD00A56D1F /* Брянск.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Брянск.jpg"; sourceTree = "<group>"; };
+		84FC1C6B1E54E8E400A56D1F /* Валдай.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Валдай.jpg"; sourceTree = "<group>"; };
+		84FC1C6D1E54E8EC00A56D1F /* Великий Новгород.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Великий Новгород.jpg"; sourceTree = "<group>"; };
+		84FC1C6F1E54E8F200A56D1F /* Владимир.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Владимир.jpg"; sourceTree = "<group>"; };
+		84FC1C711E54E90300A56D1F /* Вологда.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Вологда.jpg"; sourceTree = "<group>"; };
+		84FC1C731E54E90E00A56D1F /* Воронеж.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Воронеж.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,26 +200,6 @@
 				8478E2EA1E0AD55200570872 /* DataBaseController.swift */,
 			);
 			path = CandySearch;
-			sourceTree = "<group>";
-		};
-		84261C4B1E048CBC0007DDE3 /* Img */ = {
-			isa = PBXGroup;
-			children = (
-				84261C601E048E380007DDE3 /* Адлер-1.jpg */,
-				84261C621E048E3E0007DDE3 /* Адлер-2.jpg */,
-				84261C641E048E450007DDE3 /* Адлер-3.jpg */,
-				84261C4C1E048CE30007DDE3 /* Абзаково-1.jpg */,
-				84261C4E1E048CF60007DDE3 /* Абзаково-2.jpg */,
-				84261C501E048CFE0007DDE3 /* Абзаково-3.jpg */,
-				84261C521E048D0F0007DDE3 /* Абзаково-4.jpg */,
-				84261C541E048D130007DDE3 /* Абзаково-5.jpg */,
-				84261C561E048D280007DDE3 /* Абзаково-6.jpg */,
-				84261C581E048D2F0007DDE3 /* Абзаково-7.jpg */,
-				84261C5A1E048D370007DDE3 /* Абзаково-8.jpg */,
-				84261C5C1E048D3B0007DDE3 /* Абзаково-9.jpg */,
-				84261C5E1E048D3F0007DDE3 /* Абзаково-10.jpg */,
-			);
-			name = Img;
 			sourceTree = "<group>";
 		};
 		84261CBD1E0A9C270007DDE3 /* CoreData */ = {
@@ -309,20 +279,27 @@
 			isa = PBXGroup;
 			children = (
 				8478E30F1E1D8F5A00570872 /* CategoryImage */,
-				84261C4B1E048CBC0007DDE3 /* Img */,
 				843C3EB31E0273CE00B32B6D /* Абзаково.jpg */,
 				843C3EB51E0273DF00B32B6D /* Адлер.jpg */,
 				843C3EB71E0273E500B32B6D /* Адыгея.jpg */,
-				843C3EBB1E0273EF00B32B6D /* Астрахань.jpg */,
-				84A507F21E1FC9C000F28FE0 /* Самара.jpg */,
 				843C3EB91E0273EA00B32B6D /* Анапа.jpg */,
+				843C3EBB1E0273EF00B32B6D /* Астрахань.jpg */,
+				84FC1C651E54E8CA00A56D1F /* Березники.jpg */,
+				84FC1C671E54E8D400A56D1F /* Боровск.jpg */,
+				84FC1C691E54E8DD00A56D1F /* Брянск.jpg */,
+				84FC1C6B1E54E8E400A56D1F /* Валдай.jpg */,
+				84FC1C6D1E54E8EC00A56D1F /* Великий Новгород.jpg */,
+				84FC1C6F1E54E8F200A56D1F /* Владимир.jpg */,
+				843C3EBD1E0273F400B32B6D /* Волгоград.jpg */,
+				84FC1C711E54E90300A56D1F /* Вологда.jpg */,
+				84FC1C731E54E90E00A56D1F /* Воронеж.jpg */,
+				843C3EBF1E0273F800B32B6D /* Геленджик.jpg */,
 				84A507FA1E1FC9DB00F28FE0 /* Казань.jpg */,
 				843C3EC11E0273FE00B32B6D /* Краснодар.jpg */,
-				843C3EBD1E0273F400B32B6D /* Волгоград.jpg */,
 				84A507F81E1FC9D800F28FE0 /* Киров.jpg */,
-				843C3EBF1E0273F800B32B6D /* Геленджик.jpg */,
 				84A507F41E1FC9CD00F28FE0 /* Пермь.jpg */,
 				84A507F61E1FC9D400F28FE0 /* Пенза.jpg */,
+				84A507F21E1FC9C000F28FE0 /* Самара.jpg */,
 			);
 			name = Image;
 			sourceTree = "<group>";
@@ -403,33 +380,28 @@
 				84A507F51E1FC9CD00F28FE0 /* Пермь.jpg in Resources */,
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
 				843C3EC01E0273F900B32B6D /* Геленджик.jpg in Resources */,
+				84FC1C701E54E8F200A56D1F /* Владимир.jpg in Resources */,
 				843C3EB41E0273CE00B32B6D /* Абзаково.jpg in Resources */,
 				843C3EBE1E0273F400B32B6D /* Волгоград.jpg in Resources */,
-				84261C5B1E048D370007DDE3 /* Абзаково-8.jpg in Resources */,
-				84261C531E048D0F0007DDE3 /* Абзаково-4.jpg in Resources */,
-				84261C591E048D2F0007DDE3 /* Абзаково-7.jpg in Resources */,
+				84FC1C681E54E8D400A56D1F /* Боровск.jpg in Resources */,
+				84FC1C6E1E54E8EC00A56D1F /* Великий Новгород.jpg in Resources */,
 				84C12FFF1E1FD86400133053 /* TableViewCell1.xib in Resources */,
 				84A507F71E1FC9D400F28FE0 /* Пенза.jpg in Resources */,
 				843C3EB61E0273DF00B32B6D /* Адлер.jpg in Resources */,
 				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,
-				84261C651E048E450007DDE3 /* Адлер-3.jpg in Resources */,
 				843C3EBA1E0273EA00B32B6D /* Анапа.jpg in Resources */,
-				84261C5F1E048D3F0007DDE3 /* Абзаково-10.jpg in Resources */,
+				84FC1C721E54E90300A56D1F /* Вологда.jpg in Resources */,
+				84FC1C661E54E8CA00A56D1F /* Березники.jpg in Resources */,
+				84FC1C741E54E90E00A56D1F /* Воронеж.jpg in Resources */,
 				84A507FB1E1FC9DB00F28FE0 /* Казань.jpg in Resources */,
-				84261C611E048E380007DDE3 /* Адлер-1.jpg in Resources */,
 				843C3EB01E02736B00B32B6D /* Base.db in Resources */,
 				84A507F31E1FC9C100F28FE0 /* Самара.jpg in Resources */,
+				84FC1C6A1E54E8DD00A56D1F /* Брянск.jpg in Resources */,
 				843C3EBC1E0273EF00B32B6D /* Астрахань.jpg in Resources */,
-				84261C4F1E048CF60007DDE3 /* Абзаково-2.jpg in Resources */,
 				843C3EB21E02737800B32B6D /* Base.sql in Resources */,
-				84261C5D1E048D3B0007DDE3 /* Абзаково-9.jpg in Resources */,
-				84261C551E048D130007DDE3 /* Абзаково-5.jpg in Resources */,
-				84261C4D1E048CE40007DDE3 /* Абзаково-1.jpg in Resources */,
+				84FC1C6C1E54E8E400A56D1F /* Валдай.jpg in Resources */,
 				84A507F91E1FC9D800F28FE0 /* Киров.jpg in Resources */,
-				84261C631E048E3E0007DDE3 /* Адлер-2.jpg in Resources */,
 				8427C8261E3BA76F00C7F38C /* Main.storyboard in Resources */,
-				84261C571E048D280007DDE3 /* Абзаково-6.jpg in Resources */,
-				84261C511E048CFE0007DDE3 /* Абзаково-3.jpg in Resources */,
 				843C3EB81E0273E500B32B6D /* Адыгея.jpg in Resources */,
 				84F0130A1E260EBB002E319D /* TableViewCell2.xib in Resources */,
 				843C3EC21E0273FE00B32B6D /* Краснодар.jpg in Resources */,
