@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+/*
 struct PlacesOnCity {
     var id: Int!
     var name: String!
@@ -21,11 +21,11 @@ struct PlacesOnCity {
 }
 class PlacesTableView: UITableViewController {
 
-     var places = [PlacesOnCity]()
+    // var places = [PlacesOnCity]()
     
     var detailCity: City!
     
-    var detailCategory: CategoryPlaces!
+  //  var detailCategory: CategoryPlaces!
         override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -68,4 +68,4 @@ class PlacesTableView: UITableViewController {
     
 
 }
-
+*/

@@ -16,10 +16,13 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
     @IBOutlet var detailDescriptionLabel: UILabel!
     
     
+    var selectedImage = String()
+    var selectedLabels = String()
  
     
     var detailCity: City!
     var photos = [PhotoImage]()
+    var phim = [PhIm]()
     var ph = [Phh]()
     
     override func viewDidLoad(){
@@ -34,26 +37,25 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             PhotoImage(cityId: 2, image: "http://s-ec.bstatic.com/images/hotel/max1024x768/553/55382096.jpg",coordx:43.407405 ,coordy: 39.941437,name:"Апарт-отель Имеретинский - Морской квартал"),
            PhotoImage(cityId: 2, image: "http://t-ec.bstatic.com/images/hotel/max1024x768/738/73801631.jpg",coordx:43.392263 ,coordy: 39.97789,name:"Арфа Парк-Отель")
           */
-            //Абзаково
+            //Абзаково+
           PhotoImage( cityId : 1,image:"http://www.openarium.ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%B0%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE/%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B0-%D1%81%D0%B0%D0%BB%D0%B0%D0%B2%D0%B0%D1%82%D0%B0-%D1%8E%D0%BB%D0%B0%D0%B5%D0%B2%D0%B0.jpg" ,coordx:53.600948 ,coordy:56.646645,name:"Салаватская пещера"),
           PhotoImage( cityId : 1,image:"http://www.bashturist.ru/gallery/data/media/169/bashturist-ru_skal2.jpg" ,coordx:53.600948 ,coordy:56.646645,name:"Салаватская пещера"),
           PhotoImage( cityId : 1,image:"http://abzak.ru/wps/wp-content/uploads/2013/02/%D0%90%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE-3.jpg" ,coordx:53.813353 ,coordy: 58.625193 ,name:"Канатная дорога «Абзаково» - горнолыжный центр"),
-          PhotoImage( cityId : 1,image:"http://отдых.челсити.рф/images/%D0%9E%D1%82%D0%B4%D1%8B%D1%85/%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9/%D0%91%D0%B0%D1%88%D0%BA%D0%B8%D1%80%D0%B8%D1%8F/%D0%90%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE/%D0%90%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE.jpg" ,coordx:53.812967 ,coordy:58.628658  ,name:"«Абзаково» - горнолыжный центр "),
-          PhotoImage( cityId : 1,image:"http://отдых.челсити.рф/images/%D0%9E%D1%82%D0%B4%D1%8B%D1%85/%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9/%D0%91%D0%B0%D1%88%D0%BA%D0%B8%D1%80%D0%B8%D1%8F/%D0%90%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE/%D0%90%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE_%D0%90%D0%BA%D0%B2%D0%B0-%D0%B1%D0%B0%D1%80_%D0%94%D0%B5%D0%BB%D1%8C%D1%84%D0%B8%D0%BD._%D0%90%D0%BA%D0%B2%D0%B0%D0%BF%D0%B0%D1%80%D0%BA.jpg" ,coordx:53.815228 ,coordy:58.625944 ,name:"Аква-бар «Дельфин». Аквапарк"),
-          PhotoImage( cityId : 1,image:"http://отдых.челсити.рф/images/%D0%9E%D1%82%D0%B4%D1%8B%D1%85/%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9/%D0%91%D0%B0%D1%88%D0%BA%D0%B8%D1%80%D0%B8%D1%8F/%D0%90%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE/shema-trass-abzakovo.jpg" ,coordx:53.812967 ,coordy: 58.628658 ,name:"«Абзаково» - горнолыжный центр "),
+          PhotoImage( cityId : 1,image:"http://storage.russiantraveller.ru/abzakovo-6.jpg" ,coordx:53.812967 ,coordy:58.628658  ,name:"«Абзаково» - горнолыжный центр "),
+          PhotoImage( cityId : 1,image:"http://www.active-hotel-gorki.ru/public/tabs/9953/21359.jpg" ,coordx:53.815228 ,coordy:58.625944 ,name:"Аква-бар «Дельфин». Аквапарк"),
           PhotoImage( cityId : 1,image:"http://abzak.ru/wps/wp-content/uploads/2014/12/%D0%9A%D0%B0%D1%82%D0%BE%D0%BA-%D0%B2-%D0%90%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE.jpg" ,coordx: 53.812967 ,coordy:58.628658  ,name:"Каток Абзаково"),
           PhotoImage( cityId : 1,image:"http://abzak.ru/wps/wp-content/uploads/2015/12/%D0%97%D0%B8%D0%BC%D0%BD%D0%B8%D0%B9-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B3-%D0%B2-%D0%90%D0%B1%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE.jpg" ,coordx: 53.812967 ,coordy: 58.628658,name:"Картинг в Абзаково"),
-          //Адлер
+          //Адлер+
             PhotoImage( cityId : 2,image:"https://edemnayug.com/wp-content/uploads/2014/11/%D1%81%D0%BA%D1%83%D0%BB%D1%8C%D0%BF%D1%82%D1%83%D1%80%D1%8B.jpg" ,coordx:43.471857 ,coordy: 39.897108 ,name:"Океанариум"),
-          PhotoImage( cityId : 2,image:"http://олимпийский-парк.рф/uploads/posts/2015-12/1450438244_f33f.jpg" ,coordx:43.405515 ,coordy: 39.955162 ,name:"Светомузыкальный фонтан в Олимпийском парке"),
-          PhotoImage( cityId : 2,image:"http://олимпийский-парк.рф/uploads/posts/2015-09/1443511555_33.jpg" ,coordx:43.404673 ,coordy:39.94998  ,name:"Ледовый дворец «Большой»"),
+          PhotoImage( cityId : 2,image:"http://sochiplay.ru/uploads/images/catalog/item/91816f030b/edbf50cf75_500.jpg" ,coordx:43.405515 ,coordy: 39.955162 ,name:"Светомузыкальный фонтан в Олимпийском парке"),
+          PhotoImage( cityId : 2,image:"http://sochiplay.ru/uploads/images/catalog/item/0ff4441652/99ade68a7c_1000.jpg" ,coordx:43.404673 ,coordy:39.94998  ,name:"Ледовый дворец «Большой»"),
           PhotoImage( cityId : 2,image:"http://www.tourprom.ru/site_media/cache/3b/d7/3bd7119118d108dca8e0c423696591c3.jpg" ,coordx:43.61318 ,coordy: 39.978712,name:"Каньон реки Псахо"),
           PhotoImage( cityId : 2,image:"http://www.tourprom.ru/site_media/cache/7e/ee/7eee2d8b8cf3f91c7a9d272a84edf49b.jpg" ,coordx:43.40226 ,coordy:39.951905  ,name:"Олимпийская Ледовая арена «Шайба»"),
           PhotoImage( cityId : 2,image:"http://www.tourprom.ru/site_media/cache/14/c0/14c0512399d1cc79dd1b56af6305e46d.jpg" ,coordx:43.51712 ,coordy:39.992878  ,name:"Форелевое хозяйство в Адлере"),
           PhotoImage( cityId : 2,image:"http://www.tourprom.ru/site_media/cache/ff/26/ff26a693f63540ded4c60c0d71d0e660.jpg" ,coordx:43.398956 ,coordy: 39.949564 ,name:"Олимпийская Нижнеимеретинская набережная"),
           PhotoImage( cityId : 2,image:"http://news.momondo.com/wp-content/uploads/2016/01/Tesla_Sochi_3.jpg" ,coordx: 43.404568,coordy: 39.960794 ,name:"Электрический музей Николы Тесла"),
           PhotoImage( cityId : 2,image:"http://www.tourprom.ru/site_media/cache/69/e5/69e530175d249d231b2a60a78b2d3e5b.jpg" ,coordx: 43.557701,coordy: 39.820632 ,name:"Орлиные скалы и памятник Прометею"),
-          //Адыгея
+          //Адыгея+
           PhotoImage( cityId : 3,image:"http://vetert.ru/rossiya/adygeya/sights/275-partizanskaya-polyana/03.jpg" ,coordx:44.011367 ,coordy:40.035317,name:"Партизанская поляна"),
           PhotoImage( cityId : 3,image:"http://vetert.ru/rossiya/adygeya/sights/256-svyato-mihajlovskij-afonskij-muzhskoj-monastyr/02.jpg" ,coordx:44.290374 ,coordy:40.317094  ,name:"Свято-Михайловский Афонский мужской монастырь"),
           PhotoImage( cityId : 3,image:"http://vetert.ru/rossiya/guzeripl/sights/308-muzej-prirody-kavkazskogo-zapovednika/05.jpg" ,coordx:43.823397 ,coordy: 40.305866 ,name:"Музей природы Кавказского биосферного заповедника "),
@@ -69,7 +71,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
           PhotoImage( cityId : 3,image:"http://vetert.ru/rossiya/adygeya/sights/235-khadzhokhskaya-tesnina/04.jpg" ,coordx: 44.287561 ,coordy: 40.174092 ,name:"Хаджохская теснина"),
           PhotoImage( cityId : 3,image:"http://vetert.ru/rossiya/adygeya/sights/234-vodopady-rufabgo/02.jpg" ,coordx:44.269214  ,coordy: 40.187201 ,name:"Водопады Руфабго"),
           
-          //Александров
+          //Александров+
             PhotoImage( cityId :4 ,image:"http://tverturservis.ru/images/tury/foto/201507/zolotoe-kolco002.jpg" ,coordx:56.399531 ,coordy:38.74113 ,name:"Александровская слобода"),
             PhotoImage( cityId :4 ,image:"https://aleksandrov.city/files/cache/17/172b59067b8a706f6a1610f86f5ac58f_330_1000_1000_tr_dfc.jpg" ,coordx:56.397755  ,coordy: 38.73318 ,name:"Александровский художественный музей"),
             PhotoImage( cityId :4 ,image:"http://gorodaleksandrov.ru/upload/iblock/195/195013a4ca5da9992c4fd961209729eb.jpg" ,coordx: 56.396294,coordy:38.732504  ,name:"Парк культуры и отдыха"),
@@ -78,7 +80,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             PhotoImage( cityId :4 ,image:"https://autotravel.ru/phalbum/90511/152-s.jpg" ,coordx: 56.396056,coordy: 38.728631 ,name:"Собор Рождества Христова"),
             PhotoImage( cityId : 4,image:"http://dic.academic.ru/pictures/wiki/files/86/View_of_Staritsa.jpg" ,coordx:56.400426 ,coordy: 38.740298 ,name:"Кремль (Свято-Успенский монастырь)"),
             
-            //Aнапа
+            //Aнапа+
           PhotoImage( cityId : 5,image:"http://vetert.ru/rossiya/krasnodarskij-kraj/sights/482-neberdzhaj-svyatye-istochniki-ruchka/03.jpg" ,coordx:44.781807 ,coordy: 37.868334  ,name:"Неберджай – святые источники и «Святая ручка»"),
           PhotoImage( cityId : 5,image:"http://vetert.ru/rossiya/krasnodarskij-kraj/sights/435-dolina-lotosov-anapa-taman/02.jpg" ,coordx: 45.28870,coordy: 37.222325 ,name:"Долина лотосов"),
           PhotoImage( cityId : 5,image:"http://vetert.ru/rossiya/krasnodarskij-kraj/sights/434-vinzavod-podvaly-sauk-dere/03.jpg" ,coordx: 44.900207  ,coordy:37.886803  ,name: "Винзавод, подвалы Саук-Дере"),
@@ -88,9 +90,9 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
           PhotoImage( cityId : 5,image:"http://vetert.ru/rossiya/anapa/sights/363-kraevedcheskij-muzej/03.jpg" ,coordx: 44.888235 ,coordy:37.301002  ,name:"АКраеведческий музей"),
           PhotoImage( cityId : 5,image:"http://anapa.ru/objects/leisure/43/ex3.jpg" ,coordx: 44.88832,coordy: 37.30022  ,name:"Aквариум батискаф"),
           PhotoImage( cityId : 5,image:"http://vetert.ru/rossiya/anapa/sights/361-centralnaya-naberezhnaya/01.jpg" ,coordx:  44.897718,coordy: 37.312678 ,name:""),
-         //???????????????????????????????????????????????????????????????????????
-            
-            ///Арзамас
+        
+      
+            ///Арзамас+
             PhotoImage( cityId :6 ,image:"https://autotravel.ru/phalbum/90218/143-s.jpg" ,coordx:55.38664 ,coordy: 43.81338800000003 ,name:"Воскресенский собор"),
             PhotoImage( cityId :6 ,image:"https://autotravel.ru/phalbum/90218/144.jpg" ,coordx:55.38253009999999 ,coordy:43.82386629999996  ,name:"Церковь Рождества Христова"),
             PhotoImage( cityId :6 ,image:"https://autotravel.ru/phalbum/90705/190.jpg" ,coordx: 55.3899678,coordy:43.816978  ,name:"Арзамасский государственный литературно-мемориальный музей А.П.Гайдара"),
@@ -98,7 +100,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             PhotoImage( cityId :6,image:"https://autotravel.ru/phalbum/90830/194-s.jpg" ,coordx: 55.38532499999999,coordy:43.81876399999999  ,name:"Спасо-преображенский монастырь"),
             PhotoImage( cityId :6,image:"https://autotravel.ru/phalbum/90830/190-s.jpg" ,coordx:55.38757926890985 ,coordy:43.81329417228699  ,name:"Церковь Иконы Божией Матери Живоносный Источник"),
             
-            //Архангельск
+            //Архангельск+
             PhotoImage( cityId : 7,image:"https://autotravel.ru/phalbum/10192/055-s.jpg" ,coordx:64.5407342 ,coordy:40.514219300000036  ,name:"Обелиск Севера"),
             PhotoImage( cityId : 7,image:"https://autotravel.ru/phalbum/90506/186-s.jpg" ,coordx: 64.54454849999999,coordy: 40.51720929999999 ,name:"Танки-памятники г. Архангельска"),
             PhotoImage( cityId : 7,image:"https://autotravel.ru/phalbum/90552/168-s.jpg" ,coordx: 64.5389746,coordy: 40.50956450000001 ,name:"Музейно-выставочный комплекс Гостинный двор"),
@@ -109,7 +111,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             PhotoImage( cityId :7 ,image:"https://autotravel.ru/phalbum/90506/184-s.jpg" ,coordx: 64.5385387,coordy: 40.51313170000003 ,name:"Парк аттракционов Потешный двор"),
             PhotoImage( cityId : 7,image:"https://autotravel.ru/phalbum/90393/110-s.jpg" ,coordx:64.5388421 ,coordy:  40.514215899999954,name:"Нулевой километр"),
           
-          //Астрахань
+          //Астрахань+
           PhotoImage( cityId : 8,image:"http://vetert.ru/rossiya/astrakhan/sights/136-astrakhanskijj-kreml/01.png" ,coordx: 46.349225 ,coordy:48.032052  ,name:"Астраханский кремль"),
           PhotoImage( cityId : 8,image:"http://vetert.ru/rossiya/astrakhan/sights/143-uspensky-sobor/03.jpg" ,coordx:  46.349301,coordy:48.032983  ,name:"Успенский собор в Астрахани"),
           PhotoImage( cityId : 8,image:"http://vetert.ru/rossiya/astrakhan/sights/486-troickij-sobor/08.jpg" ,coordx:46.350201 ,coordy: 48.0322 ,name:"Троицкий собор"),
@@ -125,14 +127,14 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
           PhotoImage( cityId : 8,image:"http://vetert.ru/rossiya/astrakhan/sights/498-pokrovskij-kafedralnyj-sobor/03.jpg" ,coordx:46.363592  ,coordy: 48.046249 ,name:"Покровский кафедральный собоp"),
           PhotoImage( cityId : 8,image:"http://vetert.ru/rossiya/astrakhan/sights/499-hram-sobor-svyatogo-knyazya-vladimira/01.jpg" ,coordx:46.339247 ,coordy: 48.015953 ,name:"Храм-собор Святого князя Владимира"),
          
-        //Багратионовск
+        //Багратионовск-нт основного фото
             PhotoImage( cityId : 9,image:"https://autotravel.ru/phalbum/90683/189-s.jpg" ,coordx:54.386655 ,coordy:20.634706  ,name:"Храм св.мучениц Веры, Надежды, Любови и их матери Софии"),
             PhotoImage( cityId : 9,image:"https://autotravel.ru/phalbum/90683/198-s.jpg" ,coordx:54.37956697548634 ,coordy:20.65188  ,name:"Памятник сражению под Прейсиш-Эйлау"),
             PhotoImage( cityId : 9,image:"http://www.geocaching.su/photos/areas/29728.jpg" ,coordx: 54.383569,coordy:20.64242  ,name:"Форбург замка Прейсиш-Эйлау"),
             /*PhotoImage( cityId : 9,image:"" ,coordx: ,coordy:  ,name:""),
             PhotoImage( cityId : 9,image:"" ,coordx: ,coordy:  ,name:""),*/
             
-            //Белгород
+            //Белгород+
             PhotoImage( cityId :10,image:"https://autotravel.ru/phalbum/90636/159-s.jpg" ,coordx:50.5913648 ,coordy:  36.587583,name:"Музей-диорама Курская битва. Белгородское направление"),
             PhotoImage( cityId : 10,image:"https://autotravel.ru/phalbum/90207/142-s.jpg" ,coordx:50.595377 ,coordy: 36.595065999999974 ,name:"Смоленский собор"),
             PhotoImage( cityId : 10,image:"https://autotravel.ru/phalbum/90513/136-s.jpg" ,coordx:50.596591 ,coordy: 36.57741439999995 ,name:"Памятник Святителю Иоасафу"),
@@ -145,18 +147,18 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             PhotoImage( cityId : 10,image:"https://autotravel.ru/phalbum/90728/112-s.jpg" ,coordx:50.45465869999999 ,coordy:36.42234250000001  ,name:"Храм иконы Божией Матери Спорительница хлебов"),
             
             
-            //Березники
+            //Березники-надо новое основное фото
             PhotoImage( cityId :11,image:"http://sobory.ru/pic/12220/12222_20090603_122223.jpg" ,coordx:59.388653955136355 ,coordy: 56.77910327911377 ,name:"Храм Иоанна Предтечи "),
             PhotoImage( cityId : 11,image:"http://photos.wikimapia.org/p/00/03/37/20/89_big.jpg" ,coordx: 59.40418787926802,coordy:56.845965  ,name:"Рябиновый сквер"),
             PhotoImage( cityId :11,image:"http://photos.wikimapia.org/p/00/01/25/06/87_big.jpg" ,coordx:  59.420441 ,coordy: 56.830223 ,name:"Католический храм Пресвятой Богородицы"),
-            PhotoImage( cityId : 11,image:"" ,coordx:59.41875401959436 ,coordy: 56.831439 ,name:"Парк имени А.П. Чехова"),
+            PhotoImage( cityId : 11,image:"http://photos.wikimapia.org/p/00/01/25/13/83_big.jpg" ,coordx:59.41875401959436 ,coordy: 56.831439 ,name:"Парк имени А.П. Чехова"),
             PhotoImage( cityId : 11,image:"http://bezformata.ru/content/Images/000/050/024/image50024340.jpg" ,coordx:59.4115027 ,coordy: 56.796406 ,name:"Парк культуры и отдыха"),
          /*   PhotoImage( cityId : 9,image:"" ,coordx: ,coordy:  ,name:""),
             PhotoImage( cityId : 9,image:"" ,coordx: ,coordy:  ,name:""),
             PhotoImage( cityId : 9,image:"" ,coordx: ,coordy:  ,name:""),
             PhotoImage( cityId : 9,image:"" ,coordx: ,coordy:  ,name:""),*/
             
-            //Боровск
+            //Боровск+
             PhotoImage( cityId : 12,image:"https://autotravel.ru/phalbum/011/04-s.jpg" ,coordx:55.2145328 ,coordy:36.53300509999997  ,name:"Пафнутьев-Боровский монастырь"),
             PhotoImage( cityId : 12,image:"https://autotravel.ru/phalbum/90038/104-s.jpg" ,coordx:55.2081343 ,coordy: 36.48570599999994 ,name:"Благовещенский собор"),
             PhotoImage( cityId : 12,image:"https://autotravel.ru/phalbum/90445/193-s.jpg" ,coordx: 55.2141435,coordy: 36.50506500000006 ,name:"Церковь Бориса и Глеба"),
@@ -166,7 +168,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             PhotoImage( cityId : 12,image:"http://photos.wikimapia.org/p/00/05/75/33/77_big.jpg" ,coordx: 55.209139 ,coordy: 36.487173 ,name:"Смотровая площадка"),
             PhotoImage( cityId : 12,image:"https://autotravel.ru/phalbum/90768/111-s.jpg" ,coordx:55.20806409999999 ,coordy: 36.44654730000002 ,name:"Церковь Михаила Архангела"),
            
-            //Брянск
+            //Брянск+
             PhotoImage( cityId : 13,image:"https://autotravel.ru/phalbum/90115/109-s.jpg" ,coordx: 53.266487,coordy:34.35854199999994  ,name:"Курган бессмертия"),
           PhotoImage( cityId : 13,image:"https://autotravel.ru/phalbum/90116/105-s.jpg" ,coordx:53.1984815 ,coordy: 34.529052999999976 ,name:"Памятник водителям"),
           PhotoImage( cityId : 13,image:"https://autotravel.ru/phalbum/90115/101-s.jpg" ,coordx:53.246976 ,coordy:34.373865900000055  ,name:"Покровская гора"),
@@ -179,16 +181,16 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
           PhotoImage( cityId : 13,image:"https://autotravel.ru/phalbum/10151/026-s.jpg" ,coordx: 53.310031,coordy:34.30765900000006  ,name:"Народный музей БМЗ"),
           PhotoImage( cityId : 13,image:"https://autotravel.ru/phalbum/90115/124-s.jpg" ,coordx: 53.310031,coordy: 34.30765900000006 ,name:"Брянский литературный музей"),
           
-          //Валдай
+          //Валдай+
             PhotoImage( cityId : 14,image:"https://autotravel.ru/phalbum/90199/158-s.jpg" ,coordx:57.974014 ,coordy: 33.255666399999996 ,name:"Музей колоколов"),
             PhotoImage( cityId : 14,image:"https://autotravel.ru/phalbum/90004/108-s.jpg" ,coordx:57.9892224 ,coordy: 33.30542749999995 ,name:"Валдайский Иверский Святоозерский Богородицкий монастырь"),
             PhotoImage( cityId : 14,image:"https://autotravel.ru/phalbum/90004/102-s.jpg" ,coordx:57.97893560000001 ,coordy: 33.25522150000006 ,name:"Троицкий собор"),
             
-            //Великий Новгород
+            //Великий Новгород+
             PhotoImage( cityId : 15,image:"https://autotravel.ru/phalbum/90224/144-s.jpg" ,coordx: 58.52290279999999,coordy:31.27701300000001  ,name:"Новгородский Кремль"),
             PhotoImage( cityId : 15,image:"https://autotravel.ru/phalbum/10104/064-s.jpg" ,coordx:58.49032519999999 ,coordy: 31.272267499999998 ,name:"Музей деревянного народного зодчества Витославлицы"),
             PhotoImage( cityId : 15,image:"https://autotravel.ru/phalbum/90003/119-s.jpg" ,coordx:58.48666569999999 ,coordy:31.28445970000007  ,name:"Юрьев монастырь"),
-            PhotoImage( cityId : 15,image:"https://autotravel.ru/phalbum/90192/179-s.jpghttps://autotravel.ru/phalbum/90192/179-s.jpg" ,coordx:58.62291669999999 ,coordy:31.169328800000017  ,name:"Николо-Вяжищский монастырь"),
+            PhotoImage( cityId : 15,image:"https://i.novgorod.ru/www/images/09/00/9.jpg" ,coordx:58.62291669999999 ,coordy:31.169328800000017  ,name:"Николо-Вяжищский монастырь"),
             PhotoImage( cityId : 15,image:"https://autotravel.ru/phalbum/90095/101-s.jpg" ,coordx: 58.497164,coordy:31.31153900000004  ,name:"Церковь Спаса на Нередице"),
             PhotoImage( cityId : 15,image:"https://autotravel.ru/phalbum/90254/187-s.jpg" ,coordx:58.49427979999999 ,coordy:31.29820689999997  ,name:"Рюриково городище"),
             PhotoImage( cityId : 15,image:"https://autotravel.ru/phalbum/90844/196-s.jpg" ,coordx: 58.52330600000001,coordy: 31.293169000000034 ,name:"Церковь Федора Стратилата на Ручью"),
@@ -198,7 +200,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             PhotoImage( cityId : 15,image:"https://autotravel.ru/phalbum/90880/180-s.jpg" ,coordx:58.527749 ,coordy: 31.269520000000057 ,name:"Церковь Феодора Стратилата на Щиркове улице"),
             PhotoImage( cityId : 15,image:"https://autotravel.ru/phalbum/90415/187-s.jpg" ,coordx: 58.51822299999999,coordy:31.264216000000033  ,name:"Музейный цех фарфора"),
             
-            //Владимир
+            //Владимир+
             PhotoImage( cityId : 16,image:"https://autotravel.ru/phalbum/90429/137-s.jpg" ,coordx:56.12728000000001 ,coordy:40.40919039999994  ,name:"Успенский собор"),
             PhotoImage( cityId : 16,image:"https://autotravel.ru/phalbum/90234/123-s.jpg" ,coordx:56.126472 ,coordy: 40.39531299999999 ,name:"Золотые ворота"),
             PhotoImage( cityId : 16,image:"https://autotravel.ru/phalbum/10104/028-s.jpg" ,coordx:56.1291404 ,coordy: 40.410813899999994 ,name:"Дмитриевский собор"),
@@ -214,7 +216,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             
             
           
-          //Волгоград
+          //Волгоград+
             PhotoImage( cityId : 17,image:"http://vetert.ru/rossiya/volgograd/sights/150-steny-ruiny/01.png" ,coordx: 48.741901,coordy: 44.5381,name:"Стены-руины на Мамаевом кургане"),
           PhotoImage( cityId : 17,image:"http://vetert.ru/rossiya/volgograd/sights/154-rodina-mat-zovet/01.png" ,coordx:48.742345 ,coordy: 44.53703 ,name:"Скульптура «Родина-Мать зовет!»"),
           PhotoImage( cityId : 17,image:"http://vetert.ru/rossiya/volgograd/sights/155-hram-vseh-svyatyh-na-mamaevom-kurgane/02.png" ,coordx: 48.740797,coordy: 44.536769,name:"Храм Всех Святых на Мамаевом кургане в Волгограде"),
@@ -229,7 +231,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
           PhotoImage( cityId : 17,image:"http://vetert.ru/rossiya/volgograd/sights/167-botanicheskiy-sad-vgpu/08.png" ,coordx:48.715198,coordy: 44.527402 ,name:"Ботанический сад ВГПУ"),
           PhotoImage( cityId : 17,image:"http://vetert.ru/rossiya/volgograd/sights/351-park-skver-sashi-filippova/01.jpg" ,coordx:48.695264 ,coordy: 44.499716 ,name:"Парк, сквер Саши Филиппова и памятник"),
           
-          //Вологда
+          //Вологда+
             PhotoImage( cityId : 18,image:"https://autotravel.ru/phalbum/90261/123-s.jpg" ,coordx:59.22376519999999 ,coordy:39.88213960000007  ,name:"Вологодский Кремль"),
             PhotoImage( cityId : 18,image:"https://autotravel.ru/phalbum/10104/043-s.jpg" ,coordx:59.22376519999999 ,coordy: 39.88213960000007 ,name:"Спасо-Прилуцкий монастырь"),
             PhotoImage( cityId : 18,image:"https://autotravel.ru/phalbum/90358/113-s.jpg" ,coordx:59.2244041 ,coordy: 39.88236860000006 ,name:"Софийский собор"),
@@ -240,7 +242,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             PhotoImage( cityId : 18,image:"http://glinki-vologda.cerkov.ru/files/2014/03/0_99434_ebfc5e0d_L-%E2%80%94-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F1.jpg" ,coordx: 59.2112716,coordy: 39.88208550000002 ,name:"Храм Святителя Николая на Глинках"),
             PhotoImage( cityId : 18,image:"https://autotravel.ru/phalbum/90766/135-s.jpg" ,coordx: 59.209718,coordy: 39.84800199999995 ,name:"Занимательный музей наук Эйнштейна"),
             
-            //Воронеж
+            //Воронеж+
             PhotoImage( cityId : 19,image:"https://autotravel.ru/phalbum/90690/161-s.jpg" ,coordx: 51.7068538,coordy: 39.1722585 ,name:"Памятник Котенку с улицы Лизюкова"),
             PhotoImage( cityId : 19,image:"https://autotravel.ru/phalbum/90648/151-s.jpg" ,coordx: 51.661642,coordy: 39.19864699999994 ,name:"Воронежский театр оперы и балета"),
             PhotoImage( cityId : 19,image:"https://autotravel.ru/phalbum/90195/109-s.jpg" ,coordx:51.6936312 ,coordy: 39.20897530000002 ,name:"Ротонда"),
@@ -253,8 +255,8 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
             PhotoImage( cityId : 19,image:"https://autotravel.ru/phalbum/90794/164-s.jpg" ,coordx: 51.646498,coordy: 39.23678610000002 ,name:"Церковь Введения Пресвятой Богородицы во Храм"),
             PhotoImage( cityId : 19,image:"https://autotravel.ru/phalbum/91014/103-s.jpg" ,coordx: 51.662017,coordy: 39.20102099999997 ,name:"Кольцовский сквер"),
             PhotoImage( cityId : 19,image:"https://autotravel.ru/phalbum/91014/108-s.jpg" ,coordx:51.67492379999999 ,coordy: 39.206350799999996 ,name:"Парк Орленок"),
-            PhotoImage( cityId : 19,image:"https://autotravel.ru/phalbum/91014/125-s.jpg" ,coordx:51.646498 ,coordy: 39.23678610000002 ,name:"Церковь Успения Пресвятой Богородицы"),
-            PhotoImage( cityId : 19,image:"https://autotravel.ru/phalbum/90997/115-s.jpg" ,coordx: 51.6402623,coordy: 39.243340699999976 ,name:"Воронежский зоопарк имени А.С. Попова")//,
+            PhotoImage( cityId : 19,image:"https://autotravel.ru/phalbum/91014/125-s.jpg" ,coordx:51.646498 ,coordy: 39.2367861 ,name:"Церковь Успения Пресвятой Богородицы"),
+            PhotoImage( cityId : 19,image:"https://autotravel.ru/phalbum/90997/115-s.jpg" ,coordx: 51.6402623,coordy:39.2433407 ,name:"Воронежский зоопарк имени А.С. Попова"),
             
             
     /*            //Геленджик
@@ -316,8 +318,12 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
         ]
         for ijk in 0...photos.count-1
         {
-            if photos[ijk].cityId == detailCity.id{
+           /* if photos[ijk].cityId == detailCity.id{
                 ph.append(Phh(image: photos[ijk].image,name: photos[ijk].name))
+            }*/
+            if photos[ijk].cityId == detailCity.id{
+                phim.append(PhIm(image : photos[ijk].image,name: photos[ijk].name,
+                                 coordx :photos[ijk].coordx, coordy :photos[ijk].coordy))
             }
         }
         
@@ -330,7 +336,7 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // Количество ячеек должно соответствовать количеству
         // фотографий в нашем массиве
-       return   ph.count //photos.count //(itemsAry?.count)!
+       return   phim.count //ph.count //photos.count //(itemsAry?.count)!
         
     }
      func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -341,55 +347,96 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellPhoto", for: indexPath) as! CollectionViewCellPhotos
-        let item = ph[indexPath.row]
+        
+       // if ph.count != 0{
 
+      /*  let item = ph[indexPath.row]
+        
         let data = NSData(contentsOf: URL(string:(item.img)!)!)
         cell.photo.image = UIImage(data: data as! Data)
-        cell.nameLabel.text = item.name
-       
+        cell.nameLabel.text = item.name*/
+     //   }
+       // var backBtn = cell.viewWithTag(1) as! UIButton
+      //  backBtn.isHidden = true
+        let item = phim[indexPath.row]
+        
+        let data = NSData(contentsOf: URL(string:(item.imagePhIm)!)!)
+        cell.photo.image = UIImage(data: data as! Data)
+        cell.nameLabel.text = item.namPhIm
+
+        
         return cell
          }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    
-  /*  func collectionView(_ collectionView: UICollectionView , didSelectItemAt: IndexPath){
-        
-        self.performSegue(withIdentifier: "showOnePhoto", sender: self)
- 
-    }*/
     
    /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showOnePhoto"{
-            
-            if let indexPath =  collectionView.indexPathsForSelectedItems {
-                let photo: PhotoImage
+        if segue.identifier == "showOnePhoto" {
+            if let indexPath = collectionView.indexPath(for: self.collectionView.indexPathsForSelectedItems){
+         
+                let phoImselected = phim[indexPath.row] as PhIm
+                let phot = phoImselected.phim
+            //phoIm = phim[(indexPath as! NSIndexPath).row]
+           
+                let controller = segue.destination as! NewViewController
                 
-    //_ = IndexPath.self
-          //  ph[rth]
-                
-        let destinationViewController = segue.destination as! NewViewController
-          destinationViewController.detailPhoto = photo
+                controller.detailPhoto = phot
+             /*   controller.corX =
+                controller.corY =
+                controller.ImageText =
+                controller.NamePhoto =*/
+                //controller.detailPhoto = phoIm
+            //  controller.navigationItem.leftItemsSupplementBackButton = true
+            }
         }
     }
- */
-    
-    //передача данных дочернему окну с  фотографией
-           override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "showOnePhoto"{
-           let cell : CollectionViewCellPhotos = sender as! CollectionViewCellPhotos
+*/
+  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showOnePhoto" {
+            if let indexPath = self.collectionView.indexPath(for: CollectionViewCellPhotos)//( sender: as! CollectionViewCellPhotos ){
+           let photoIm = phim[indexPath].row
+                let detailVC:NewViewController = segue.destination as! NewViewController
+                
+                detailVC.detailPhoto = photoIm
+              //  detailVC.currenText = self.collectionView.cellForItem(at: indexPath)
             
-            let image = cell.photo.image
-            let text = cell.nameLabel.text
-            let previewVC : NewViewController = segue.destination as! NewViewController
-            previewVC.imageViewPreview.image = image
-            previewVC.currenText.text = text
-            }
-    }
+
+                /*   let photoIm: PhIm
+       
+                    photoIm =  phim[(indexPath as NSIndexPath).row]
+
+                let controller = segue.destination as! NewViewController
+                 //   (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                controller.detailPhoto = photoIm*/
+           }
+ */
+           /* func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+                let photoIm: PhIm
+                photoIm = phim[indexPath].row
+               
+                
+            }*/
+
+   /* func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     
+        selectedImage = ph[indexPath.row].img! as String
+        selectedLabels = ph[indexPath.row].name! as String
+        self.performSegue(withIdentifier: "showOnePhoto", sender: self)
+        //self.performSegueWithIdentifer("showOnePhoto", sender: self)
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showOnePhoto"{
+       // if segue.identifer == "showOnePhoto" {
+            let detailVC:NewViewController = segue.destination as! NewViewController
+            detailVC.ImageText = selectedLabels
+            detailVC.NamePhoto = selectedImage
+        }
+    }*/
+   
+ 
  
     }
     

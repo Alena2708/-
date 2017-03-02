@@ -11,8 +11,30 @@ import MapKit
 import CoreLocation
 class MapViewController: UIViewController ,MKMapViewDelegate , CLLocationManagerDelegate
 {
+   
+    
+    @IBAction func showMyLocation(_ sender: Any) {
+        
+        getlocation()
+    }
+    
+    @IBAction func typeMap(_ sender: UISegmentedControl) {
+       
+        switch (sender.selectedSegmentIndex) {
+        case 0:
+            mapView.mapType = .standard
+        case 1:
+            mapView.mapType = .satellite
+        default: // or case 2
+            mapView.mapType = .hybrid
+        }
+ 
+    }
+    
+   
     //Map
     @IBOutlet var mapView: MKMapView!
+    
     
     
     @IBAction func updaeLocationUser(_ sender: AnyObject) {
@@ -45,7 +67,10 @@ class MapViewController: UIViewController ,MKMapViewDelegate , CLLocationManager
     {
        locationManager.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) ->()  in
         self.displayLocation(location: CLLocation(latitude: latitude ,longitude: longitude))
-        }
+     /*    let bsuCSCampusLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+      
+    mapView.setRegion(MKCoordinateRegion(bsuCSCampusLocation), animated: true)
+        */}
         
     }
     func displayLocation(location: CLLocation)
@@ -69,108 +94,43 @@ class MapViewController: UIViewController ,MKMapViewDelegate , CLLocationManager
             getlocation()
         }
     }
-//функция изменения локации
- /*   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
-    {
-        let location = locations[0]
-        
-        let myLiocation :CLLocationCoordinate2D =  CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
-        let span :MKCoordinateSpan = MKCoordinateSpanMake(0.001,0.001)
 
-        let region : MKCoordinateRegion = MKCoordinateRegionMake(myLiocation, span)
-        mapView.setRegion(region,animated:  true)
-        
-        self.mapView.showsUserLocation = true
-        
-        
-    }*/
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-      //  mapView.delegate = self
-      
-        let ditanceSpan :CLLocationDistance = 4000
+  
+        //задаем масштаб приближения карты
+       let ditanceSpan :CLLocationDistance = 4000
+        //получаем координаты для отображения на карте
         let bsuCSCampusLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(CLLocationDegrees(detailCity.coordinateX), CLLocationDegrees(detailCity.coordinateY))
+        //задаем регио отображения карты
         mapView.setRegion(MKCoordinateRegionMakeWithDistance(bsuCSCampusLocation, ditanceSpan, ditanceSpan), animated: true)
-            
-        let bsuCSClassPin = BSUAnnotation(title: detailCity.name, coordinate: bsuCSCampusLocation)
-        mapView.addAnnotation(bsuCSClassPin)
  
-        let identifier = "MyPin"
-        let  annotationView = MKPinAnnotationView(annotation: bsuCSClassPin, reuseIdentifier: identifier )
-        let lefIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 53, height: 53))
-        lefIconView.image = UIImage(named: detailCity.name + ".jpg")
-        annotationView.leftCalloutAccessoryView = lefIconView
+        //создадим аннотацию
+    let annotation = MKPointAnnotation()
         
-               /* coreLocationManager.desiredAccuracy = kCLLocationAccuracyBest //мы уже находимся на какой то точке в карте но нам необходимо найти именно ту в которой мы находимся т.е. точку лушче чем сейчас
-        coreLocationManager.requestWhenInUseAuthorization() //дя того чтобы использовать геолокацию тольк при использовании приложения
-        coreLocationManager.startUpdatingLocation() //обновляем*/
+    
         
-     //   locationManager = locationManager(<#T##manager: CLLocationManager##CLLocationManager#>, didUpdateLocations: <#T##[CLLocation]#>)
-/*let geoCoder = CLGeocoder()
-        geoCoder.geocodeAddressString(detailCity.coordinate, completionHandler: {placemarks, error in
-        if error != nil  //                     .coordinate
-        { //проверяем на ошибку
-            print(error)
-            return
-            } // если место сущетвует то создаем массив объектов и выбираем первый для отображения
-            if let placemarks = placemarks{
-              let  placemark = placemarks[0]
+        annotation.coordinate = bsuCSCampusLocation
+        annotation.title = detailCity.name
+        
+      
+        mapView.showAnnotations([annotation], animated: true)
+        mapView.selectAnnotation(annotation, animated: true)
  
-            let annotation = MKPointAnnotation()
-            annotation.title = self.detailCity.name
-            if let location = placemark.location {
-                annotation.coordinate = location.coordinate
-                
-                self.mapView.showAnnotations([annotation], animated: true)
-                self.mapView.selectAnnotation(annotation, animated: true)
-                
-                }}
- 
-            
-        })
-   */
-        // Do any additional setup after loading the view.
-    }
-
+ }
+   
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-   /* func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let identifier = "MyPin"
     
-
-        if annotation.isKind(of: MKUserLocation.self) {
-            return nil
-        }
-        
-        var annotationView: MKPinAnnotationView? = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
-        
-        if annotationView == nil {
-            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            annotationView?.canShowCallout = true
-        }
-        
-        let lefIconView = UIImageView(frame: CGRect(x: 0, y: 0, width: 53, height: 53))
-        lefIconView.image = UIImage(named: detailCity.name + ".jpg")
-        annotationView?.leftCalloutAccessoryView = lefIconView
-        
-        return annotationView
-    }
-    
-*/
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showCategory"{
+            let destinationViewController = segue.destination as!  CategoryViewController
+            destinationViewController.detailCity = detailCity
+        }
     }
-    */
-
-
+    
+    }

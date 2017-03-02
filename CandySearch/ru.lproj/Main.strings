@@ -1,0 +1,45 @@
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "1br-hr-cEa"; */
+"1br-hr-cEa.title" = " ";
+
+/* Class = "UINavigationItem"; title = "Map"; ObjectID = "2c6-tk-Tzy"; */
+"2c6-tk-Tzy.title" = "Map";
+
+/* Class = "UINavigationItem"; title = "Фотогалерея"; ObjectID = "3XX-Rf-Qj8"; */
+"3XX-Rf-Qj8.title" = "Фотогалерея";
+
+/* Class = "UINavigationItem"; title = "Категории"; ObjectID = "4hV-Bq-d7J"; */
+"4hV-Bq-d7J.title" = "Категории";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "6aQ-lD-ztn"; */
+"6aQ-lD-ztn.title" = "Title";
+
+/* Class = "UITableViewController"; title = "Master"; ObjectID = "7bK-jq-Zjz"; */
+"7bK-jq-Zjz.title" = "Master";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Arm-wq-HPj"; */
+"Arm-wq-HPj.text" = "Title";
+
+/* Class = "UILabel"; text = "detailDescriptionLabel"; ObjectID = "Ejc-l1-clY"; */
+"Ejc-l1-clY.text" = "detailDescriptionLabel";
+
+/* Class = "UILabel"; text = "Выберете место"; ObjectID = "HhO-92-M7K"; */
+"HhO-92-M7K.text" = "Выберете место";
+
+/* Class = "UIViewController"; title = "Detail"; ObjectID = "JEX-9P-axG"; */
+"JEX-9P-axG.title" = "Detail";
+
+/* Class = "UINavigationController"; title = "Master"; ObjectID = "RMx-3f-FxP"; */
+"RMx-3f-FxP.title" = "Master";
+
+/* Class = "UIButton"; normalTitle = "Что можно посетить"; ObjectID = "YbY-io-JYr"; */
+"YbY-io-JYr.normalTitle" = "Что можно посетить";
+
+/* Class = "UIButton"; normalTitle = "Фотогалерея"; ObjectID = "htY-9y-oO8"; */
+"htY-9y-oO8.normalTitle" = "Фотогалерея";
+
+/* Class = "UIButton"; normalTitle = "Показать на карте"; ObjectID = "l3W-D7-ZFk"; */
+"l3W-D7-ZFk.normalTitle" = "Показать на карте";
+
+/* Class = "UINavigationItem"; title = "Detail"; ObjectID = "mOI-FS-AaM"; */
+"mOI-FS-AaM.title" = "Detail";

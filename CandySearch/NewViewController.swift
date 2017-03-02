@@ -11,12 +11,16 @@ import UIKit
 class NewViewController: UIViewController {
     @IBOutlet  var imageViewPreview: UIImageView!
     
+   /* var NamePhoto = String()
+    var ImageText = String()
+    var corX = Float()
+    var vorY = Float()*/
    // var detailPhoto: PhotoImage!
     @IBOutlet var currenText: UILabel!
     
     @IBOutlet var detailDescriptionLabel: UILabel!
     
-    var detailPhoto: PhotoImage? {
+    var detailPhoto: PhIm? {
         didSet {
             configureView()
         }
@@ -24,12 +28,16 @@ class NewViewController: UIViewController {
     func configureView() {
         if let detailPhoto = detailPhoto {
             if  (detailDescriptionLabel) != nil{
-                let data = NSData(contentsOf: URL(string:(detailPhoto.image)!)!)
+               let data = NSData(contentsOf: URL(string:(detailPhoto.imagePhIm))!)
                 imageViewPreview.image = UIImage(data: data as! Data)
-                currenText.text = detailPhoto.name
-               // candyImageView.image = UIImage(named: detailCity.name+".jpg")
-              //  title = detailCity.name
-               // CityText.text=detailCity.text
+                currenText.text = detailPhoto.namPhIm
+            
+                
+         //   imageViewPreview.image =
+             //  currenText.text = detailPhoto.namPhIm
+             //   let data = NSData(contentsOf: URL(string:(detailPhoto.imagePhIm))!)
+            //    imageViewPreview.image = UIImage(data: data as! Data)
+             
             }
         }
     }
@@ -37,7 +45,9 @@ class NewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+     /*   if NamePhoto != nil {
+            configureView()
+        }*/
         
         // Do any additional setup after loading the view.
     }

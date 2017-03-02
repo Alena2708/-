@@ -1,7 +1,7 @@
 
 
 import UIKit
-
+import MapKit
 class DetailViewController: UIViewController {
   
 
@@ -9,7 +9,10 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var candyImageView: UIImageView!
 
-    @IBOutlet var CityText: UITextView!
+       
+    
+    @IBOutlet var CityText: UILabel!
+   
     
     @IBOutlet var OnlineMap: UIButton!
    
@@ -51,7 +54,8 @@ class DetailViewController: UIViewController {
             
         }
         if segue.identifier == "showCategory"{
-            let destinationViewController = segue.destination as!  CategoryViewController
+             let destinationViewController = (segue.destination as! UINavigationController).topViewController as! CategoryViewController
+          //  let destinationViewController = segue.destination as!  CategoryViewController
             destinationViewController.detailCity = detailCity
             
         }

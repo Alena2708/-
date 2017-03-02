@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,8 +30,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="nQB-jQ-YKx" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="205" id="12m-Cu-WgD"/>
-                            <constraint firstItem="nQB-jQ-YKx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="66" id="NPN-dR-1bx"/>
+                            <constraint firstItem="nQB-jQ-YKx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Op3-W1-cae"/>
+                            <constraint firstItem="nQB-jQ-YKx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Pc7-DX-gc8"/>
                         </constraints>
                     </view>
                 </viewController>

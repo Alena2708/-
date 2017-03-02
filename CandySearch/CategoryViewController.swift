@@ -8,20 +8,20 @@
 
 
 import UIKit
-struct CategoryPlaces {
+/*struct CategoryPlaces {
     var id: Int!
     var name: String!
     var idPhoto: UIImage!
 }
 
-
-class CategoryViewController: UITableViewController  {
-var detailViewController: PlacesTableView? = nil
-    var categoryes = [CategoryPlaces]()
+*/
+class CategoryViewController: UIViewController  {
+///var detailViewController: PlacesTableView? = nil
+  //  var categoryes = [CategoryPlaces]()
 var detailCity: City!
     
     override func viewDidLoad() {
-        
+    /*
         categoryes = [
             CategoryPlaces(id:1, name:"Достопримечательности",idPhoto: UIImage(named: "Достопримечательности" )),
             CategoryPlaces(id:2, name:"Покупки",idPhoto:UIImage(named:"Покупки")),
@@ -32,11 +32,14 @@ var detailCity: City!
             CategoryPlaces(id:7, name:"Здоровье",idPhoto:UIImage(named:"Здоровье")),
             CategoryPlaces(id:8, name:"Жилье",idPhoto:UIImage(named:"Жилье")),
             CategoryPlaces(id:9, name:"Транспорт",idPhoto:UIImage(named:"Транспорт")),
-        ]
+        ]*/
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+/*    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categoryes.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,10 +54,10 @@ var detailCity: City!
     return 50
     }
  
+    */
     
     
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+/*    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPlaces"{
             if let indexPath = tableView.indexPathForSelectedRow {
             let category : CategoryPlaces
@@ -65,7 +68,7 @@ var detailCity: City!
             }}
     }
 
-    
+    */
 }
 
 

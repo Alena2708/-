@@ -14,7 +14,21 @@ struct PhotoImage{
     let coordy: Float
     let name: String!
     }
-
+struct PhIm{
+    let imagePhIm:String!
+    let coordXx:Float
+    let coordYy:Float
+    let namPhIm: String
+    
+    init (image :String,name:String,coordx:Float,coordy:Float)
+    {
+        self.imagePhIm = image
+        self.namPhIm = name
+        self.coordXx = coordx
+        self.coordYy = coordy
+    }
+    
+}
 class Phh: NSObject {
     var img:String?=nil
     var name:String?=nil
