@@ -12,9 +12,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
     splitViewController.delegate = self
     
-    UISearchBar.appearance().barTintColor = UIColor.magenta
+    UISearchBar.appearance().barTintColor = UIColor.candyGreen()
     UISearchBar.appearance().tintColor = UIColor.white
-    UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = UIColor.magenta
+    UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = UIColor.candyGreen()
     return true
   }
   
@@ -33,8 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 }
 
 extension UIColor {
-  static func candyGreen() -> UIColor {
-    return UIColor(red: 67.0/255.0, green: 205.0/255.0, blue: 135.0/255.0, alpha: 1.0)
-  }
+    static func candyGreen() -> UIColor {
+        return UIColor(red:0.29, green:0.89, blue:1.00, alpha:1.0)
+    }
 }
 
