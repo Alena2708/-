@@ -10,8 +10,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var candyImageView: UIImageView!
 
        
+    @IBOutlet var CityText: UITextView!
     
-    @IBOutlet var CityText: UILabel!
+//    @IBOutlet var CityText: UILabel!
    
     
     @IBOutlet var OnlineMap: UIButton!
@@ -44,17 +45,14 @@ class DetailViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "showMap"{
-        let destinationViewController = segue.destination as!  MapViewController
-        destinationViewController.detailCity = detailCity
-        }
+   
         if segue.identifier == "showPhoto"{
             let destinationViewController = segue.destination as!  PhotoGaleryView
             destinationViewController.detailCity = detailCity
             
         }
         if segue.identifier == "showCategory"{
-             let destinationViewController = (segue.destination as! UINavigationController).topViewController as! CategoryViewController
+             let destinationViewController = segue.destination as! CategoryViewController
           //  let destinationViewController = segue.destination as!  CategoryViewController
             destinationViewController.detailCity = detailCity
             

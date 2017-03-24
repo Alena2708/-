@@ -83,34 +83,34 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8tj-Xq-7R4" kind="showDetail" identifier="showCategoryes" id="92C-km-XD8"/>
+                                    <segue destination="8tj-Xq-7R4" kind="showDetail" identifier="showCategory" id="92C-km-XD8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9R-qt-Gyv">
-                                <rect key="frame" x="0.0" y="255" width="320" height="254"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6j-qL-s9F">
+                                <rect key="frame" x="0.0" y="256" width="320" height="252"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ejc-l1-clY" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="232" id="04E-dq-3dJ"/>
                             <constraint firstItem="23X-qE-jxr" firstAttribute="trailing" secondItem="caI-Ei-atU" secondAttribute="trailing" id="4mS-PZ-62Z"/>
+                            <constraint firstItem="htY-9y-oO8" firstAttribute="trailing" secondItem="caI-Ei-atU" secondAttribute="trailing" id="6YC-NN-XO6"/>
+                            <constraint firstItem="htY-9y-oO8" firstAttribute="leading" secondItem="m6j-qL-s9F" secondAttribute="leading" id="7oT-t0-e8p"/>
                             <constraint firstItem="htY-9y-oO8" firstAttribute="leading" secondItem="YbY-io-JYr" secondAttribute="leading" id="7ve-gC-L4W"/>
-                            <constraint firstItem="YbY-io-JYr" firstAttribute="top" secondItem="h9R-qt-Gyv" secondAttribute="bottom" constant="29" id="AhB-Xi-62L"/>
                             <constraint firstItem="23X-qE-jxr" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="Bxn-jU-YT2"/>
                             <constraint firstItem="YbY-io-JYr" firstAttribute="top" secondItem="htY-9y-oO8" secondAttribute="bottom" id="F4X-5R-ELr"/>
-                            <constraint firstItem="h9R-qt-Gyv" firstAttribute="trailing" secondItem="htY-9y-oO8" secondAttribute="trailing" id="HIz-C5-gz3"/>
+                            <constraint firstItem="m6j-qL-s9F" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="192" id="HM3-RB-vlg"/>
+                            <constraint firstItem="htY-9y-oO8" firstAttribute="trailing" secondItem="m6j-qL-s9F" secondAttribute="trailing" id="O6L-x3-OiT"/>
                             <constraint firstAttribute="trailing" secondItem="23X-qE-jxr" secondAttribute="trailing" id="OJX-TY-sAg"/>
                             <constraint firstItem="YbY-io-JYr" firstAttribute="bottom" secondItem="GAO-Cl-Wes" secondAttribute="top" id="V7n-cu-cUf"/>
-                            <constraint firstItem="h9R-qt-Gyv" firstAttribute="leading" secondItem="23X-qE-jxr" secondAttribute="leading" id="bQO-ID-0pt"/>
+                            <constraint firstItem="htY-9y-oO8" firstAttribute="top" secondItem="m6j-qL-s9F" secondAttribute="bottom" id="VeQ-PU-nIa"/>
                             <constraint firstItem="23X-qE-jxr" firstAttribute="bottom" secondItem="caI-Ei-atU" secondAttribute="bottom" id="dzr-wV-LEh"/>
                             <constraint firstItem="htY-9y-oO8" firstAttribute="trailing" secondItem="YbY-io-JYr" secondAttribute="trailing" id="f1r-8D-8fk"/>
                             <constraint firstItem="23X-qE-jxr" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" id="iZz-RP-hhw"/>
-                            <constraint firstItem="h9R-qt-Gyv" firstAttribute="leading" secondItem="htY-9y-oO8" secondAttribute="leading" id="pia-e9-Gse"/>
-                            <constraint firstItem="h9R-qt-Gyv" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="191" id="psq-RG-0zb"/>
-                            <constraint firstItem="h9R-qt-Gyv" firstAttribute="trailing" secondItem="caI-Ei-atU" secondAttribute="trailing" id="rRo-mH-bqV"/>
+                            <constraint firstItem="htY-9y-oO8" firstAttribute="leading" secondItem="23X-qE-jxr" secondAttribute="leading" id="ray-Yg-lQk"/>
                             <constraint firstItem="caI-Ei-atU" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="145" id="sye-ml-OND"/>
                             <constraint firstItem="Ejc-l1-clY" firstAttribute="top" secondItem="GAO-Cl-Wes" secondAttribute="bottom" constant="43" id="tmG-Zm-5Pk"/>
                         </constraints>
@@ -120,7 +120,7 @@
                         <barButtonItem key="backBarButtonItem" title="Назад" id="1oB-p8-T74"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="CityText" destination="h9R-qt-Gyv" id="vqe-mU-cct"/>
+                        <outlet property="CityText" destination="m6j-qL-s9F" id="PUP-b3-90S"/>
                         <outlet property="OnlineMap" destination="caI-Ei-atU" id="amM-ER-Na6"/>
                         <outlet property="candyImageView" destination="23X-qE-jxr" id="y0y-ql-WRp"/>
                         <outlet property="detailDescriptionLabel" destination="Ejc-l1-clY" id="LUr-pM-Anc"/>
