@@ -275,13 +275,13 @@ class PhotoGaleryView: UIViewController , UICollectionViewDataSource , UICollect
              PhotoImage( cityId : 7,image:"http://vetert.ru/rossiya/gelendzhik/sights/542-hram-mihaila-chernigovskogo/08.jpg" ,coordx:44.571577 ,coordy: 38.022316 ,name:"Храм Михаила Черниговского ")//,
              */
             //Челябинск
-            PhotoImage( cityId : 22,image:"https://autotravel.ru/phalbum/90205/101-s.jpg" ,coordx: 55.1678329,coordy: 61.400530399999 ,name:"Кировка"),
-            PhotoImage( cityId : 22,image:"https://autotravel.ru/phalbum/90204/198-s.jpg" ,coordx: 55.1714764,coordy: 61.399417999999 ,name:"Зал камерной и органной музыки на Алом поле"),
+            PhotoImage( cityId : 22,image:"https://akuaku.ru/static/2013/3/5/9b72e4fc212b40f4bd833e1010916511.jpg" ,coordx: 55.1678329,coordy: 61.400530399999 ,name:"Кировка"),
+            PhotoImage( cityId : 22,image:"http://2.bp.blogspot.com/-5bgboeffmRc/T4RB9d1ZMBI/AAAAAAAABbQ/LfFEKyTdDUk/s1600/DSC03732.JPG" ,coordx: 55.1714764,coordy: 61.399417999999 ,name:"Зал камерной и органной музыки на Алом поле"),
             PhotoImage( cityId :22,image:"https://autotravel.ru/phalbum/90204/184-s.jpg" ,coordx:55.159255  ,coordy:  61.363087,name:"Памятник И. В. Курчатову"),
-            PhotoImage( cityId : 22,image:"https://autotravel.ru/phalbum/90892/127-s.jpg" ,coordx:55.14169  ,coordy:  61.413526,name:"Монумент Сказ об Урале"),
+            PhotoImage( cityId : 22,image:"http://www.russian-autotravel.ru/userimages/3/28.jpg" ,coordx:55.14169  ,coordy:  61.413526,name:"Монумент Сказ об Урале"),
             PhotoImage( cityId : 22,image:"https://autotravel.ru/phalbum/90204/188-s.jpg" ,coordx: 55.160389,coordy: 61.433964 ,name:"Музей трудовой и боевой славы ЧТЗ"),
             PhotoImage( cityId : 22,image:"http://140706.selcdn.ru/mapstore/map/landmarks/836/1_57417322c2d7a979.jpeg" ,coordx: 55.163423,coordy:  61.371712,name:"ЦПКиО имени Ю. А. Гагарина"),
-            PhotoImage( cityId : 22,image:"https://autotravel.ru/phalbum/90583/163-s.jpg" ,coordx:55.174313 ,coordy:  61.399103,name:"Церковь Троицы Живоначальной"),
+            PhotoImage( cityId : 22,image:"http://obzor-mest.ru/wp-content/uploads/2014/02/vid-na-hram-svyatoj-troicy-v-chelyabinske.jpg" ,coordx:55.174313 ,coordy:  61.399103,name:"Церковь Троицы Живоначальной"),
             PhotoImage( cityId : 22,image:"http://sobor-chel.ru/uploads/images/raznoe/sobory/1951.jpeg" ,coordx: 55.160575,coordy:61.455413 ,name:"Церковь Василия Великого")//,
             /*  PhotoImage( cityId : 22,image:"" ,coordx: 1,coordy: 1 ,name:""),
              PhotoImage( cityId : 22,image:"" ,coordx:1 ,coordy: 1 ,name:""),

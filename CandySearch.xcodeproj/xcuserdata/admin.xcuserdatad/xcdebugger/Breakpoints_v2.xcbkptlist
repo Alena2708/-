@@ -120,12 +120,12 @@
                   moduleName = "CandySearch"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Desktop/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/CandySearch/NewViewController.swift"
-                  timestampString = "511905872.231316"
+                  timestampString = "512210514.530597"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
                   endingLineNumber = "29"
-                  offsetFromSymbolStart = "29">
+                  offsetFromSymbolStart = "20">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -135,12 +135,12 @@
                   moduleName = "CandySearch"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Desktop/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC/CandySearch/NewViewController.swift"
-                  timestampString = "511905872.235772"
+                  timestampString = "512210514.535366"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
                   endingLineNumber = "29"
-                  offsetFromSymbolStart = "303">
+                  offsetFromSymbolStart = "236">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -216,11 +216,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CandySearch/CategoryViewController.swift"
-            timestampString = "511905800.66535"
+            timestampString = "512204846.159635"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "goToGoogle(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -232,11 +232,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CandySearch/CategoryViewController.swift"
-            timestampString = "511905800.66535"
+            timestampString = "512204846.159635"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "goToGoogle(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CandySearch/CategoryViewController.swift"
+            timestampString = "512204015.583983"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CandySearch/CategoryViewController.swift"
+            timestampString = "512205889.483725"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "goToGoogle(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CandySearch/CategoryViewController.swift"
+            timestampString = "512206034.302287"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "goToGoogle(_:)"
             landmarkType = "7">
          </BreakpointContent>
