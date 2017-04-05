@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -168,7 +168,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellPhoto" id="Vgn-mQ-CN4" customClass="CollectionViewCellPhotos" customModule="CandySearch" customModuleProvider="target">
-                                        <rect key="frame" x="3" y="0.0" width="315" height="214"/>
+                                        <rect key="frame" x="2.5" y="0.0" width="315" height="214"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="315" height="214"/>
@@ -179,6 +179,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slb-qO-IH7">
                                                     <rect key="frame" x="0.0" y="176" width="315" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.2901960784" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -312,18 +313,18 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" id="yDq-Gz-FBC">
-                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
+                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -347,7 +348,7 @@
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title=" " id="1br-hr-cEa"/>
                         <view key="titleView" contentMode="scaleToFill" id="kkb-Ak-h4B">
-                            <rect key="frame" x="40" y="6" width="240" height="33"/>
+                            <rect key="frame" x="40" y="5.5" width="240" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите место" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhO-92-M7K">
@@ -495,11 +496,14 @@
                                 <rect key="frame" x="269" y="332" width="51" height="31"/>
                                 <color key="onTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s67-Yv-kJO">
-                                <rect key="frame" x="137" y="509" width="48" height="48"/>
-                                <state key="normal" image="Map Marker-96"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsf-Yx-f9b">
+                                <rect key="frame" x="103" y="500" width="69" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <state key="normal" image="Map Marker-96">
+                                    <color key="titleColor" red="0.2901960784" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="goToGoogle:" destination="8tj-Xq-7R4" eventType="touchUpInside" id="AIi-qe-OT7"/>
+                                    <segue destination="jXw-ZR-FAK" kind="show" identifier="showGoogle" id="7r1-N9-Qhq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -520,12 +524,10 @@
                             <constraint firstItem="KoE-Ul-vos" firstAttribute="top" secondItem="xYL-x9-CJE" secondAttribute="bottom" constant="8" id="KKH-4H-Odk"/>
                             <constraint firstItem="vW4-qN-CA3" firstAttribute="top" secondItem="eNA-Wb-Pay" secondAttribute="bottom" constant="8" id="LXk-88-ixr"/>
                             <constraint firstAttribute="trailing" secondItem="jCJ-JE-IdE" secondAttribute="trailing" id="LaF-0m-DhD"/>
-                            <constraint firstItem="DiK-ji-vfN" firstAttribute="top" secondItem="s67-Yv-kJO" secondAttribute="bottom" constant="11" id="LnV-Mh-sZp"/>
                             <constraint firstItem="xYL-x9-CJE" firstAttribute="top" secondItem="DGa-8b-cps" secondAttribute="bottom" constant="8" id="M4g-Fj-dEt"/>
                             <constraint firstAttribute="trailing" secondItem="KT8-EK-3yL" secondAttribute="trailing" id="NYS-iO-Qxd"/>
                             <constraint firstAttribute="trailing" secondItem="5Kd-2c-gae" secondAttribute="trailing" id="OCk-Dw-uHo"/>
                             <constraint firstAttribute="trailing" secondItem="Vx1-6F-5Ks" secondAttribute="trailing" constant="2" id="OoN-T5-cB1"/>
-                            <constraint firstItem="s67-Yv-kJO" firstAttribute="leading" secondItem="62I-0S-U92" secondAttribute="leadingMargin" constant="121" id="P1g-Z4-5MF"/>
                             <constraint firstItem="KXB-jv-cwx" firstAttribute="top" secondItem="Vx1-6F-5Ks" secondAttribute="bottom" constant="8" id="PIK-zg-GrQ"/>
                             <constraint firstAttribute="trailing" secondItem="KoE-Ul-vos" secondAttribute="trailing" constant="2" id="Rrt-b4-ld0"/>
                             <constraint firstAttribute="trailing" secondItem="eAv-LJ-MiY" secondAttribute="trailing" constant="2" id="Rzp-w5-R2h"/>
@@ -566,7 +568,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJu-rE-v0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1896" y="-407"/>
+            <point key="canvasLocation" x="1837.5" y="-413.02816901408454"/>
+        </scene>
+        <!--Карта-->
+        <scene sceneID="r1R-FY-BeP">
+            <objects>
+                <viewController id="jXw-ZR-FAK" customClass="GoogleViewController" customModule="CandySearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gRl-jb-nYB"/>
+                        <viewControllerLayoutGuide type="bottom" id="cKp-zF-kTf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y1n-Fc-egV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h4U-CR-hc1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.2901960784" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Title" id="zEU-J5-YAj"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Карта" id="yI8-Qe-0bE">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="06q-UL-O3x"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAz-8J-XDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2841" y="-398"/>
         </scene>
     </scenes>
     <resources>

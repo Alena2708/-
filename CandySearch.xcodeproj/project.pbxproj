@@ -27,13 +27,11 @@
 		84261CBA1E0A9BD90007DDE3 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CB01E0A9BD90007DDE3 /* Category+CoreDataProperties.swift */; };
 		84261CBB1E0A9BD90007DDE3 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CB11E0A9BD90007DDE3 /* Photo+CoreDataClass.swift */; };
 		84261CBC1E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84261CB21E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift */; };
+		842770231E8BF2AE00BDC803 /* GoogleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842770221E8BF2AE00BDC803 /* GoogleViewController.swift */; };
 		8427C8261E3BA76F00C7F38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8427C8241E3BA76F00C7F38C /* Main.storyboard */; };
-		8427C8281E3C8B3D00C7F38C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C8271E3C8B3C00C7F38C /* LocationManager.swift */; };
 		843C3EB01E02736B00B32B6D /* Base.db in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EAF1E02736B00B32B6D /* Base.db */; settings = {ASSET_TAGS = (New, ); }; };
 		843C3EB21E02737800B32B6D /* Base.sql in Resources */ = {isa = PBXBuildFile; fileRef = 843C3EB11E02737800B32B6D /* Base.sql */; };
 		843C3EC51E02773A00B32B6D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843C3EC41E02773A00B32B6D /* MapKit.framework */; };
-		843C3EC71E027D6600B32B6D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C3EC61E027D6500B32B6D /* MapViewController.swift */; };
-		8445D76B1E66DB6500B29839 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8445D76A1E66DB6500B29839 /* Annotation.swift */; };
 		8467A4F21E436D0100C68298 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467A4F11E436D0000C68298 /* PhotoItem.swift */; };
 		846B05D21E40D6A700A98A53 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846B05D11E40D6A700A98A53 /* ImageIO.framework */; };
 		846EC0361E376B990008EA59 /* CollectionViewCellPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846EC0351E376B990008EA59 /* CollectionViewCellPhotos.swift */; };
@@ -73,6 +71,7 @@
 		84FC1C701E54E8F200A56D1F /* Владимир.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C6F1E54E8F200A56D1F /* Владимир.jpg */; };
 		84FC1C721E54E90300A56D1F /* Вологда.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C711E54E90300A56D1F /* Вологда.jpg */; };
 		84FC1C741E54E90E00A56D1F /* Воронеж.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84FC1C731E54E90E00A56D1F /* Воронеж.jpg */; };
+		CFF6F16738682D3A33791DCD /* Pods_CandySearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E054810422AA649D8FAE129 /* Pods_CandySearch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -97,6 +96,7 @@
 		171E0C891B8E5B84001E6242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		171E0C8B1B8E5B84001E6242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171E0CAD1B8E5C58001E6242 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		2E054810422AA649D8FAE129 /* Pods_CandySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8402ACDA1E82E7750096CE80 /* Челябинск.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Челябинск.jpg"; sourceTree = "<group>"; };
 		84261C471E0470370007DDE3 /* BSUAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSUAnnotation.swift; sourceTree = "<group>"; };
 		84261C491E0482210007DDE3 /* PhotoGalerryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalerryView.swift; sourceTree = "<group>"; };
@@ -111,13 +111,11 @@
 		84261CB01E0A9BD90007DDE3 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		84261CB11E0A9BD90007DDE3 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		84261CB21E0A9BD90007DDE3 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		842770221E8BF2AE00BDC803 /* GoogleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleViewController.swift; path = CandySearch/GoogleViewController.swift; sourceTree = SOURCE_ROOT; };
 		8427C8251E3BA76F00C7F38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8427C8271E3C8B3C00C7F38C /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		843C3EAF1E02736B00B32B6D /* Base.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Base.db; sourceTree = "<group>"; };
 		843C3EB11E02737800B32B6D /* Base.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Base.sql; sourceTree = "<group>"; };
 		843C3EC41E02773A00B32B6D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		843C3EC61E027D6500B32B6D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		8445D76A1E66DB6500B29839 /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		8467A4F11E436D0000C68298 /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
 		846B05D11E40D6A700A98A53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		846EC0351E376B990008EA59 /* CollectionViewCellPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellPhotos.swift; sourceTree = "<group>"; };
@@ -159,6 +157,8 @@
 		84FC1C6F1E54E8F200A56D1F /* Владимир.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Владимир.jpg"; sourceTree = "<group>"; };
 		84FC1C711E54E90300A56D1F /* Вологда.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Вологда.jpg"; sourceTree = "<group>"; };
 		84FC1C731E54E90E00A56D1F /* Воронеж.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Воронеж.jpg"; sourceTree = "<group>"; };
+		CEAACFAF311B39FA739C6D94 /* Pods-CandySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandySearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-CandySearch/Pods-CandySearch.release.xcconfig"; sourceTree = "<group>"; };
+		F7EB171C77273CBC3D3E1B39 /* Pods-CandySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandySearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CandySearch/Pods-CandySearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +169,7 @@
 				846B05D21E40D6A700A98A53 /* ImageIO.framework in Frameworks */,
 				846EC03A1E3B302C0008EA59 /* CoreLocation.framework in Frameworks */,
 				843C3EC51E02773A00B32B6D /* MapKit.framework in Frameworks */,
+				CFF6F16738682D3A33791DCD /* Pods_CandySearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +184,7 @@
 				171E0C7C1B8E5B84001E6242 /* CandySearch */,
 				171E0C7B1B8E5B84001E6242 /* Products */,
 				843C3EC31E02773900B32B6D /* Frameworks */,
+				E9D958290289D8A043E17179 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,7 +199,7 @@
 		171E0C7C1B8E5B84001E6242 /* CandySearch */ = {
 			isa = PBXGroup;
 			children = (
-				8427C8291E3C8C2600C7F38C /* Map */,
+				842770221E8BF2AE00BDC803 /* GoogleViewController.swift */,
 				846EC0341E3768340008EA59 /* Photo */,
 				84C130001E201AE400133053 /* Места */,
 				8478E30E1E1D6EE400570872 /* Category */,
@@ -243,22 +245,13 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		8427C8291E3C8C2600C7F38C /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				8427C8271E3C8B3C00C7F38C /* LocationManager.swift */,
-				843C3EC61E027D6500B32B6D /* MapViewController.swift */,
-				8445D76A1E66DB6500B29839 /* Annotation.swift */,
-			);
-			name = Map;
-			sourceTree = "<group>";
-		};
 		843C3EC31E02773900B32B6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				846B05D11E40D6A700A98A53 /* ImageIO.framework */,
 				846EC0391E3B302B0008EA59 /* CoreLocation.framework */,
 				843C3EC41E02773A00B32B6D /* MapKit.framework */,
+				2E054810422AA649D8FAE129 /* Pods_CandySearch.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -337,6 +330,15 @@
 			name = "Места";
 			sourceTree = "<group>";
 		};
+		E9D958290289D8A043E17179 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7EB171C77273CBC3D3E1B39 /* Pods-CandySearch.debug.xcconfig */,
+				CEAACFAF311B39FA739C6D94 /* Pods-CandySearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,10 +346,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 171E0CA41B8E5B84001E6242 /* Build configuration list for PBXNativeTarget "CandySearch" */;
 			buildPhases = (
+				DC57C960D6FEB89F46902DED /* [CP] Check Pods Manifest.lock */,
 				171E0C761B8E5B84001E6242 /* Sources */,
 				171E0C771B8E5B84001E6242 /* Frameworks */,
 				171E0C781B8E5B84001E6242 /* Resources */,
 				846B06011E40D97300A98A53 /* Embed Frameworks */,
+				EAB19F2DD6EF8A462A875F27 /* [CP] Embed Pods Frameworks */,
+				487570241219855630D97A95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -438,6 +443,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		487570241219855630D97A95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CandySearch/Pods-CandySearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC57C960D6FEB89F46902DED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB19F2DD6EF8A462A875F27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CandySearch/Pods-CandySearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		171E0C761B8E5B84001E6242 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -447,7 +500,6 @@
 				8478E2EE1E0AF34C00570872 /* CategoryViewController.swift in Sources */,
 				84261CB71E0A9BD90007DDE3 /* Places+CoreDataClass.swift in Sources */,
 				84261CB81E0A9BD90007DDE3 /* Places+CoreDataProperties.swift in Sources */,
-				8445D76B1E66DB6500B29839 /* Annotation.swift in Sources */,
 				84261CA81E07D94D0007DDE3 /* DatabaseModel.xcdatamodeld in Sources */,
 				84C130021E201E3B00133053 /* PlacesTableView.swift in Sources */,
 				84261CB61E0A9BD90007DDE3 /* Place+CoreDataProperties.swift in Sources */,
@@ -463,7 +515,6 @@
 				84261CB31E0A9BD90007DDE3 /* Favorites+CoreDataClass.swift in Sources */,
 				84261CB51E0A9BD90007DDE3 /* Place+CoreDataClass.swift in Sources */,
 				171E0C801B8E5B84001E6242 /* MasterViewController.swift in Sources */,
-				843C3EC71E027D6600B32B6D /* MapViewController.swift in Sources */,
 				84261CBB1E0A9BD90007DDE3 /* Photo+CoreDataClass.swift in Sources */,
 				84261CB91E0A9BD90007DDE3 /* Category+CoreDataClass.swift in Sources */,
 				8478E2EB1E0AD55200570872 /* DataBaseController.swift in Sources */,
@@ -471,7 +522,7 @@
 				84C12FFE1E1FD86400133053 /* TableViewCell1.swift in Sources */,
 				84261CBA1E0A9BD90007DDE3 /* Category+CoreDataProperties.swift in Sources */,
 				8478E2F01E0AF3DA00570872 /* Category.swift in Sources */,
-				8427C8281E3C8B3D00C7F38C /* LocationManager.swift in Sources */,
+				842770231E8BF2AE00BDC803 /* GoogleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +642,7 @@
 		};
 		171E0CA51B8E5B84001E6242 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7EB171C77273CBC3D3E1B39 /* Pods-CandySearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -598,7 +650,10 @@
 				INFOPLIST_FILE = CandySearch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = travel21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CandySearch/CandySearch-Bridging-Header.h";
@@ -609,6 +664,7 @@
 		};
 		171E0CA61B8E5B84001E6242 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEAACFAF311B39FA739C6D94 /* Pods-CandySearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
